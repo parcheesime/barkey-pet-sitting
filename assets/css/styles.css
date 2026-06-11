@@ -150,7 +150,7 @@ a {
   font-weight: 900;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: var(--teal);
+  color: var(--coral);
 }
 
 h1,
@@ -303,12 +303,12 @@ h3 {
 
 .service-card:nth-child(2) {
   background: var(--teal);
-  color: var(--paper);
+  color: var(--ink);
   border-top: 10px solid var(--butter);
 }
 
 .service-card:nth-child(2) h3 {
-  color: var(--butter);
+  color: var(--ink);
 }
 
 .service-card:nth-child(3) {
@@ -322,7 +322,7 @@ h3 {
 .why-panel {
   padding: clamp(1.5rem, 4vw, 3rem);
   background: var(--teal);
-  color: var(--paper);
+  color: var(--ink);
   border: 3px solid var(--ink);
   border-radius: 2rem;
   box-shadow: var(--shadow);
@@ -342,7 +342,10 @@ h3 {
   color: var(--butter);
 }
 
-.why-panel .eyebrow,
+.why-panel .eyebrow {
+  color: var(--ink);
+}
+
 .contact-card .eyebrow {
   color: var(--butter);
 }
@@ -360,7 +363,7 @@ h3 {
 .check-list li::before {
   content: "✓";
   margin-right: 0.75rem;
-  color: var(--butter);
+  color: var(--ink);
 }
 
 .testimonial blockquote {
@@ -495,6 +498,10 @@ textarea {
   .contact-card,
   .card-grid {
     grid-template-columns: 1fr;
+  }
+
+  .hero-card {
+    margin-top: 1.5rem;
   }
 
   h1 {
