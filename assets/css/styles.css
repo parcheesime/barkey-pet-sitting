@@ -240,6 +240,9 @@ a {
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  text-align: center;
+  text-wrap: pretty;
+  white-space: normal;
   padding: 0.95rem 2rem;
   font-size: var(--font-button); /* Unified CTA font size */
   font-weight: 700;
@@ -370,6 +373,10 @@ a {
   line-height: 1;
   display: inline-flex;
   align-items: center;
+  justify-content: center;
+  text-align: center;
+  text-wrap: pretty;
+  white-space: normal;
 }
 
 .site-nav .nav-cta:hover {
