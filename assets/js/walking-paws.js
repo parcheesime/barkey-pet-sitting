@@ -1,19 +1,19 @@
 /**
- * Walking Paws Animation Utility
- * Supports two animation modes for simulating walking footprints:
+ * Walking Sparkles Animation Utility
+ * Supports two animation modes for simulating retro sparkle trails:
  * 
  * 1. Circular Mode (.walking-paws-circle):
- *    Auto-generates paw print SVGs arranged in a circle.
+ *    Auto-generates starburst SVGs arranged in a circle.
  * 
  * 2. Path Mode (.walking-paws-path):
- *    Sequentially animates pre-existing child elements (e.g., SVG paws, emojis, images) 
+ *    Sequentially animates pre-existing child elements (e.g., SVG sparkles, emojis, images)
  *    placed anywhere in any layout (lines, curves, trails).
  */
 document.addEventListener('DOMContentLoaded', () => {
-  // SVG markup for a generated paw print (used in circular mode)
-  const pawSvg = `
+  // SVG markup for a generated starburst (used in circular mode)
+  const sparkleSvg = `
     <svg viewBox="0 0 20 20" fill="currentColor" style="width: 100%; height: 100%; display: block;">
-      <path d="M10 13.5c1.38 0 2.5-1.12 2.5-2.5S11.38 8.5 10 8.5s-2.5 1.12-2.5 2.5 1.12 2.5 2.5 2.5zm-3-2.5c.83 0 1.5-.67 1.5-1.5S7.83 8 7 8s-1.5.67-1.5 1.5.67 1.5 1.5 1.5zm6 0c.83 0 1.5-.67 1.5-1.5S13.83 8 13 8s-1.5.67-1.5 1.5.67 1.5 1.5 1.5zm-4-4.5c.69 0 1.25-.56 1.25-1.25S9.69 4 9 4s-1.25.56-1.25 1.25S8.31 6.5 9 6.5zm2 0c.69 0 1.25-.56 1.25-1.25S11.69 4 11 4s-1.25.56-1.25 1.25S10.31 6.5 11 6.5z"/>
+      <path d="M10 1.5l1.45 4.15L15.5 7.1l-4.05 1.45L10 12.7l-1.45-4.15L4.5 7.1l4.05-1.45L10 1.5zM16.7 3.1l.55 1.6 1.6.55-1.6.55-.55 1.6-.55-1.6-1.6-.55 1.6-.55.55-1.6zM3.3 12.8l.55 1.6 1.6.55-1.6.55-.55 1.6-.55-1.6-1.6-.55 1.6-.55.55-1.6z"/>
     </svg>
   `;
 
@@ -53,7 +53,7 @@ document.addEventListener('DOMContentLoaded', () => {
         paw.style.transform = `translate(-50%, -50%) rotate(${facingAngle}deg)`;
         paw.style.opacity = '0.1';
         paw.style.transition = 'opacity 0.2s ease-in-out, transform 0.2s ease-in-out';
-        paw.innerHTML = pawSvg;
+        paw.innerHTML = sparkleSvg;
         
         container.appendChild(paw);
         paws.push(paw);

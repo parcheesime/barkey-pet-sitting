@@ -192,7 +192,10 @@ p {
 }
 
 /* Typography */
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
   font-family: "Fraunces", Georgia, serif;
   color: var(--olive);
   line-height: 1.2;
@@ -231,8 +234,10 @@ a {
 }
 
 .paw-accent {
-  color: var(--brown);
-  font-size: 0.9em;
+  color: var(--mustard);
+  display: inline-block;
+  font-size: 0.95em;
+  transform: translateY(-0.05em) rotate(8deg);
 }
 
 /* Primary CTA Buttons */
@@ -244,7 +249,8 @@ a {
   text-wrap: pretty;
   white-space: normal;
   padding: 0.95rem 2rem;
-  font-size: var(--font-button); /* Unified CTA font size */
+  font-size: var(--font-button);
+  /* Unified CTA font size */
   font-weight: 700;
   line-height: 1.2;
   border-radius: 9999px;
@@ -303,7 +309,7 @@ a {
   width: 4.25rem;
   height: 4.25rem;
   background-color: var(--paper);
-  color: var(--olive);
+  color: var(--mustard);
   border-radius: 50%;
   display: grid;
   place-items: center;
@@ -323,8 +329,10 @@ a {
 
 .brand-name {
   font-family: "Freckle Face", display;
-  font-size: 3.4375rem; /* Sized slightly larger for Freckle Face display style */
-  font-weight: 400;  /* Freckle Face uses normal weight */
+  font-size: 3.4375rem;
+  /* Sized slightly larger for Freckle Face display style */
+  font-weight: 400;
+  /* Freckle Face uses normal weight */
   letter-spacing: 0.02em;
   line-height: 1.1;
 }
@@ -369,7 +377,8 @@ a {
   border-radius: 9999px;
   box-shadow: var(--cta-shadow);
   font-weight: 700;
-  font-size: var(--font-nav); /* Unified CTA font size */
+  font-size: var(--font-nav);
+  /* Unified CTA font size */
   line-height: 1;
   display: inline-flex;
   align-items: center;
@@ -444,6 +453,7 @@ a {
   position: relative;
   display: inline-block;
   z-index: 10;
+  overflow: visible;
 }
 
 .hero-polaroid {
@@ -452,6 +462,94 @@ a {
 
 .bio-polaroid {
   width: min(100%, clamp(430px, 28vw, 680px));
+}
+
+.atomic-bursts {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 25;
+  color: var(--mustard);
+  overflow: visible;
+}
+
+.atomic-burst {
+  position: absolute;
+  display: block;
+  color: var(--mustard);
+  opacity: 0.95;
+  filter: drop-shadow(0 0 0.35rem rgba(201, 111, 50, 0.12));
+}
+
+.atomic-burst svg {
+  display: block;
+}
+
+.atomic-burst-a {
+  width: clamp(2rem, 2.4vw, 3.2rem);
+  height: clamp(2rem, 2.4vw, 3.2rem);
+}
+
+.atomic-burst-b {
+  width: clamp(1.35rem, 1.7vw, 2.2rem);
+  height: clamp(1.35rem, 1.7vw, 2.2rem);
+}
+
+.atomic-burst-c {
+  width: clamp(0.95rem, 1.2vw, 1.5rem);
+  height: clamp(0.95rem, 1.2vw, 1.5rem);
+}
+
+.atomic-burst-d {
+  width: clamp(0.8rem, 1vw, 1.25rem);
+  height: clamp(0.8rem, 1vw, 1.25rem);
+}
+
+.atomic-bursts-hero .atomic-burst-a {
+  top: -1.1rem;
+  left: -1.4rem;
+  transform: rotate(-14deg);
+}
+
+.atomic-bursts-hero .atomic-burst-b {
+  top: 18%;
+  right: -1rem;
+  transform: rotate(12deg);
+}
+
+.atomic-bursts-hero .atomic-burst-c {
+  bottom: 12%;
+  left: -0.7rem;
+  transform: rotate(26deg);
+}
+
+.atomic-bursts-bio .atomic-burst-a {
+  width: clamp(5rem, 6vw, 7.25rem);
+  height: clamp(5rem, 6vw, 7.25rem);
+  left: -3.25rem;
+  top: -1.1rem;
+  transform: rotate(8deg);
+}
+
+.atomic-bursts-bio .atomic-burst-b {
+  top: 18%;
+  right: -2.5rem;
+  width: clamp(2.2rem, 2.6vw, 3.2rem);
+  height: clamp(2.2rem, 2.6vw, 3.2rem);
+}
+
+.atomic-bursts-bio .atomic-burst-c {
+  bottom: 8%;
+  right: -2rem;
+  width: clamp(1.65rem, 2vw, 2.4rem);
+  height: clamp(1.65rem, 2vw, 2.4rem);
+}
+
+.atomic-bursts-bio .atomic-burst-d {
+  bottom: 20%;
+  left: -2rem;
+  width: clamp(1.35rem, 1.7vw, 2rem);
+  height: clamp(1.35rem, 1.7vw, 2rem);
 }
 
 .polaroid-frame {
@@ -478,7 +576,7 @@ a {
 .polaroid-img {
   width: 100%;
   aspect-ratio: 1 / 1;
-  object-fit: cover;
+  object-fit: contain;
   border-radius: 2px;
   border: 1px solid var(--ink-border-soft);
 }
@@ -490,6 +588,7 @@ a {
   margin-top: 1.25rem;
   color: var(--ink-light);
   font-weight: 700;
+  min-height: 2.4rem;
 }
 
 /* Scotch Tape Graphic Overlay */
@@ -527,7 +626,7 @@ a {
   width: clamp(112px, 7vw, 168px);
   height: clamp(112px, 7vw, 168px);
   background-color: transparent;
-  color: var(--ink);
+  color: var(--mustard);
   z-index: 30;
   transform: rotate(12deg);
 }
@@ -646,14 +745,16 @@ a {
 }
 
 .card-paw-footer {
-  color: var(--border);
-  font-size: 1.2rem;
+  color: var(--mustard);
+  font-size: 1.35rem;
+  letter-spacing: 0.04em;
 }
 
 /* Specific Card Tab Headers */
 .card-green {
   border-top: 8px solid var(--olive);
 }
+
 .card-green .card-icon-wrapper {
   background-color: var(--olive-light);
   color: var(--olive);
@@ -662,6 +763,7 @@ a {
 .card-yellow {
   border-top: 8px solid var(--mustard);
 }
+
 .card-yellow .card-icon-wrapper {
   background-color: var(--accent-soft);
   color: var(--mustard-hover);
@@ -670,6 +772,7 @@ a {
 .card-brown {
   border-top: 8px solid var(--blue);
 }
+
 .card-brown .card-icon-wrapper {
   background-color: var(--blue-light);
   color: var(--blue);
@@ -907,11 +1010,12 @@ a {
   position: relative;
   width: 96px;
   height: 96px;
-  color: var(--paper);
+  color: var(--mustard);
   opacity: 0.85;
   transform: rotate(-10deg);
 }
 
+.footer-stamp .stamp-paw,
 .footer-stamp .walking-paw {
   color: var(--mustard);
 }
@@ -1375,7 +1479,7 @@ a {
     text-align: center;
     padding: 0.5rem 0;
   }
-  
+
   .site-nav .nav-cta {
     width: 100%;
     min-height: auto;
