@@ -2099,6 +2099,24 @@ select:focus-visible {
   text-align: center;
 }
 
+.nav-illustration {
+  width: min(100%, 230px);
+  margin: auto auto 0;
+  padding-top: var(--space-2xl);
+}
+
+.nav-illustration img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+@media (min-width: 1024px) and (max-width: 1200px) {
+  .nav-illustration {
+    width: 190px;
+  }
+}
+
 .layout-main {
   margin-left: 280px;
   padding: var(--space-xl) var(--space-2xl) var(--space-3xl);
@@ -2372,6 +2390,10 @@ select:focus-visible {
 
   .layout-rail .site-nav a {
     text-align: center;
+  }
+
+  .nav-illustration {
+    display: none;
   }
 
   .layout-main {
