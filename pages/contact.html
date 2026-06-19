@@ -4,9 +4,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description"
-    content="Schedule a Meet & Greet with Starkey Pet Sitting. Tell us about your pet and their care routine." />
-  <title>Schedule a Meet & Greet - Starkey Pet Sitting</title>
+  <meta name="description" content="Contact Susan at Starkey Pet Sitting with a public pet care inquiry." />
+  <title>Contact Susan - Starkey Pet Sitting</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
@@ -14,18 +13,11 @@
     rel="stylesheet">
   <link rel="stylesheet" href="../assets/css/styles.css?v=3">
   <script src="../assets/js/script.js" defer></script>
-  <script src="../assets/js/walking-paws.js" defer></script>
 </head>
 
-<body class="theme-bold-retro-pet-shop">
-  <header class="site-header">
+<body class="layout-shell">
+  <header class="site-header layout-rail">
     <a class="logo" href="../index.html" aria-label="Starkey Pet Sitting home">
-      <div class="logo-badge">
-        <svg viewBox="0 0 24 24" fill="currentColor">
-          <path
-            d="M12 2.2l1.9 5.1 5.1 1.9-5.1 1.9L12 16.2l-1.9-5.1L5 9.2l5.1-1.9L12 2.2zm6.6 1.6l.6 1.6 1.6.6-1.6.6-.6 1.6-.6-1.6-1.6-.6 1.6-.6.6-1.6zM4.8 15.2l.6 1.6 1.6.6-1.6.6-.6 1.6-.6-1.6-1.6-.6 1.6-.6.6-1.6z" />
-        </svg>
-      </div>
       <div class="logo-text">
         <span class="brand-name">Starkey</span>
         <span class="brand-sub">PET SITTING</span>
@@ -39,127 +31,83 @@
     </button>
 
     <nav class="site-nav" aria-label="Main navigation">
-      <a href="../index.html#about">About</a>
-      <a href="resources.html">Resources</a>
-      <a href="contact.html" class="nav-contact-link active">Contact</a>
-      <a href="contact.html" class="cta-button nav-cta">Schedule a Meet & Greet</a>
+      <a href="../index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="faq.html">FAQ</a>
+      <a href="contact.html" class="active">Contact</a>
     </nav>
   </header>
 
-  <main class="contact-page-main">
-    <section class="contact-section">
-      <div class="contact-page-container">
+  <main class="layout-main">
+    <section class="page-hero" aria-labelledby="contact-title">
+      <p class="page-kicker">Contact</p>
+      <h1 id="contact-title" class="page-title">Contact Susan</h1>
+      <p class="page-intro contact-page-intro">
+        Use this public inquiry form to start a conversation about care for your pet.
+      </p>
+    </section>
 
-        <!-- Form Info / Left Side -->
-        <div class="contact-info-card">
-          <h1>Let's chat!</h1>
-          <p class="eyebrow-accent">TELL US ABOUT YOUR PET</p>
-          <p class="contact-intro">
-            We'd love to learn about your pet, their routine, and the kind of care you're looking for. Dogs, cats,
-            birds, reptiles, rabbits, fish, and other beloved companions are all welcome.
-          </p>
-
-          <div class="direct-contact-box">
-            <h2>Prefer to reach out directly?</h2>
-            <ul class="direct-contact-list">
-              <li>
-                <span class="contact-icon-small">📧</span>
-                <a href="mailto:starkey.pet.sitting@gmail.com">starkey.pet.sitting@gmail.com</a>
-              </li>
-              <li>
-                <span class="contact-icon-small">📱</span>
-                <a href="tel:+16193583472">(619) 358-3472</a>
-              </li>
-            </ul>
+    <section class="contact-editorial" aria-label="Public inquiry form">
+      <div class="contact-form-card">
+        <form class="retro-contact-form" action="https://formspree.io/f/xgobyjdw" method="POST">
+          <div class="form-group">
+            <label for="name">Your Name <span class="required">*</span></label>
+            <input type="text" id="name" name="name" placeholder="Your name" required>
           </div>
-        </div>
 
-        <!-- Form Card / Right Side -->
-        <div class="contact-form-card">
-          <form class="retro-contact-form" action="https://formspree.io/f/xgobyjdw" method="POST">
+          <div class="form-group">
+            <label for="email">Email Address <span class="required">*</span></label>
+            <input type="email" id="email" name="email" placeholder="you@example.com" required>
+          </div>
 
+          <div class="form-group">
+            <label for="phone">Phone Number (Optional)</label>
+            <input type="tel" id="phone" name="phone" placeholder="(619) 555-5555">
+          </div>
+
+          <div class="form-row-grid">
             <div class="form-group">
-              <label for="name">Your Name <span class="required">*</span></label>
-              <input type="text" id="name" name="name" placeholder="Susan Starkey" required>
-            </div>
-
-            <div class="form-group">
-              <label for="email">Email Address <span class="required">*</span></label>
-              <input type="email" id="email" name="email" placeholder="you@example.com" required>
-            </div>
-
-            <div class="form-group">
-              <label for="phone">Phone Number (Optional)</label>
-              <input type="tel" id="phone" name="phone" placeholder="(619) 555-5555">
-            </div>
-
-            <div class="form-row-grid">
-              <div class="form-group">
-                <label for="pet_names">Pet Name(s)</label>
-                <input type="text" id="pet_names" name="pet_names" placeholder="Milo, Luna, Kiwi...">
-              </div>
-
-              <div class="form-group">
-                <label for="species">Species</label>
-                <input type="text" id="species" name="species" placeholder="Dog, Cat, Parrot, Tortoise...">
-              </div>
+              <label for="pet_names">Pet Name(s)</label>
+              <input type="text" id="pet_names" name="pet_names" placeholder="Milo, Luna, Kiwi">
             </div>
 
             <div class="form-group">
-              <label for="preferred_contact">Preferred Contact Method</label>
-              <div class="select-wrapper">
-                <select id="preferred_contact" name="preferred_contact">
-                  <option value="Email">Email</option>
-                  <option value="Phone Call">Phone Call</option>
-                  <option value="Text Message">Text Message</option>
-                </select>
-              </div>
+              <label for="species">Species</label>
+              <input type="text" id="species" name="species" placeholder="Dog, cat, bird, reptile">
             </div>
+          </div>
 
-            <div class="form-group">
-              <label for="message">Your Message <span class="required">*</span></label>
-              <textarea id="message" name="message" rows="5"
-                placeholder="Tell us about your pet, the dates needed, and the type of care you're looking for..."
-                required></textarea>
+          <div class="form-group">
+            <label for="preferred_contact">Preferred Contact Method</label>
+            <div class="select-wrapper">
+              <select id="preferred_contact" name="preferred_contact">
+                <option value="Email">Email</option>
+                <option value="Phone Call">Phone Call</option>
+                <option value="Text Message">Text Message</option>
+              </select>
             </div>
+          </div>
 
-            <button type="submit" class="cta-button submit-btn">Send Inquiry ✦</button>
+          <div class="form-group">
+            <label for="message">Your Message <span class="required">*</span></label>
+            <textarea id="message" name="message" rows="5"
+              placeholder="Tell Susan about your pet, the dates needed, and the type of care you're looking for."
+              required></textarea>
+          </div>
 
-            <p class="form-note">We typically respond within 24 hours.</p>
-          </form>
-        </div>
+          <button type="submit" class="cta-button submit-btn">Contact Susan</button>
+          <p class="form-note">Susan will follow up by email or your preferred contact method.</p>
+        </form>
+      </div>
+    </section>
 
+    <section class="framework-footer">
+      <div class="copyright-bar">
+        <p>&copy; <span id="year"></span> Starkey Pet Sitting.</p>
       </div>
     </section>
   </main>
-
-  <!-- FOOTER -->
-  <footer class="footer-banner">
-    <div class="footer-banner-container">
-      <div class="footer-stamp">
-        <svg viewBox="0 0 120 120" class="stamp-svg">
-          <path id="footer-stamp-text-path-contact" d="M 60,60 m -45,0 a 45,45 0 1,1 90,0 a 45,45 0 1,1 -90,0"
-            fill="none" />
-          <text class="stamp-text">
-            <textPath href="#footer-stamp-text-path-contact" startOffset="0%">LOCAL CARE • YOU CAN TRUST • </textPath>
-          </text>
-          <path class="stamp-paw"
-            d="M60 34l6.5 17.5L84 58l-17.5 6.5L60 82l-6.5-17.5L36 58l17.5-6.5L60 34zm25.5 6.5l2.2 6 6 2.2-6 2.2-2.2 6-2.2-6-6-2.2 6-2.2 2.2-6zm-51 34l2.2 6 6 2.2-6 2.2-2.2 6-2.2-6-6-2.2 6-2.2 2.2-6z"
-            fill="currentColor" />
-        </svg>
-      </div>
-
-      <div class="footer-banner-copy">
-        <h2>Let's give your pet the care they deserve.</h2>
-        <a href="contact.html" class="cta-button">Schedule a Meet & Greet</a>
-      </div>
-    </div>
-
-    <!-- COPYRIGHT BAR -->
-    <div class="copyright-bar">
-      <p>© <span id="year"></span> Starkey Pet Sitting. Made with love, paw prints, feathers, fins, and scales.</p>
-    </div>
-  </footer>
 </body>
 
 </html>

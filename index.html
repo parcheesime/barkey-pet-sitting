@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description"
-    content="Loving care when you're not there. Friendly, dependable pet sitting and daily habitat care by Susan Starkey." />
+    content="In-home pet care for the pets you love. Starkey Pet Sitting provides thoughtful care by Susan Starkey." />
   <title>Starkey Pet Sitting</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,18 +14,11 @@
     rel="stylesheet">
   <link rel="stylesheet" href="assets/css/styles.css?v=3">
   <script src="assets/js/script.js" defer></script>
-  <script src="assets/js/walking-paws.js" defer></script>
 </head>
 
-<body class="theme-bold-retro-pet-shop">
-  <header class="site-header">
-    <a class="logo" href="#home" aria-label="Starkey Pet Sitting home">
-      <div class="logo-badge">
-        <svg viewBox="0 0 24 24" fill="currentColor">
-          <path
-            d="M12 2.2l1.9 5.1 5.1 1.9-5.1 1.9L12 16.2l-1.9-5.1L5 9.2l5.1-1.9L12 2.2zm6.6 1.6l.6 1.6 1.6.6-1.6.6-.6 1.6-.6-1.6-1.6-.6 1.6-.6.6-1.6zM4.8 15.2l.6 1.6 1.6.6-1.6.6-.6 1.6-.6-1.6-1.6-.6 1.6-.6.6-1.6z" />
-        </svg>
-      </div>
+<body class="layout-shell">
+  <header class="site-header layout-rail">
+    <a class="logo" href="index.html" aria-label="Starkey Pet Sitting home">
       <div class="logo-text">
         <span class="brand-name">Starkey</span>
         <span class="brand-sub">PET SITTING</span>
@@ -39,353 +32,102 @@
     </button>
 
     <nav class="site-nav" aria-label="Main navigation">
-      <a href="#about">About</a>
-      <a href="pages/resources.html">Resources</a>
-      <a href="pages/contact.html" class="nav-contact-link">Contact</a>
-      <a href="pages/contact.html" class="cta-button nav-cta">Schedule a Meet & Greet</a>
+      <a href="index.html" class="active">Home</a>
+      <a href="pages/about.html">About</a>
+      <a href="pages/services.html">Services</a>
+      <a href="pages/faq.html">FAQ</a>
+      <a href="pages/contact.html">Contact</a>
     </nav>
   </header>
 
-  <main>
-    <!-- HERO SECTION -->
-    <section id="home" class="hero">
-      <div class="hero-container">
-        <div class="hero-copy">
-          <h1>Loving care when you're <span class="cursive-accent">not there.</span> <span class="paw-accent">✦</span>
-          </h1>
-          <p class="hero-text">
-            Because every Barkey deserves a Starkey.
-          </p>
-          <div class="hero-actions">
-            <a href="pages/contact.html" class="cta-button">Schedule a Meet & Greet</a>
-          </div>
+  <main class="layout-main">
+    <section class="framework-hero" aria-labelledby="home-title">
+      <div class="framework-hero__copy">
+        <p class="page-kicker">In-home pet care</p>
+        <h1 id="home-title">Starkey Pet Sitting</h1>
+        <p class="framework-hero__tagline">In-home pet care for the pets you love.</p>
+        <div class="framework-hero__actions">
+          <a href="pages/contact.html" class="cta-button">Contact Susan</a>
         </div>
-
-        <div class="hero-visual">
-          <div class="polaroid-wrapper hero-polaroid">
-            <div class="atomic-bursts atomic-bursts-hero" aria-hidden="true">
-              <svg class="atomic-burst atomic-burst-a" viewBox="0 0 28 28" fill="currentColor">
-                <path d="M16 1.5l3.2 8.3 8.3 3.2-8.3 3.2L16 24.5l-3.2-8.3-8.3-3.2 8.3-3.2L16 1.5z" />
-              </svg>
-              <svg class="atomic-burst atomic-burst-b" viewBox="0 0 28 28" fill="currentColor">
-                <path d="M16 4.5l2.1 5.9L24 12.5l-5.9 2.1L16 20.5l-2.1-5.9L8 12.5l5.9-2.1L16 4.5z" />
-              </svg>
-              <svg class="atomic-burst atomic-burst-c" viewBox="0 0 28 28" fill="currentColor">
-                <path d="M16 6l1.5 4.1 4.1 1.5-4.1 1.5L16 17.2l-1.5-4.1-4.1-1.5 4.1-1.5L16 6z" />
-              </svg>
-            </div>
-            <div class="tape-graphic top-tape"></div>
-            <div class="polaroid-frame">
-              <img src="assets/images/catdog.png" alt="Cat and dog illustration" class="polaroid-img">
-              <div class="polaroid-caption" aria-hidden="true"></div>
-            </div>
-            <!-- Circle Stamp Badge -->
-            <div class="post-stamp-badge">
-              <svg viewBox="0 0 120 120" class="stamp-svg">
-                <path id="stamp-text-path" d="M 60,60 m -45,0 a 45,45 0 1,1 90,0 a 45,45 0 1,1 -90,0" fill="none" />
-                <text class="stamp-text">
-                  <textPath href="#stamp-text-path" startOffset="0%">LOCAL CARE • YOU CAN TRUST • </textPath>
-                </text>
-                <path class="stamp-paw"
-                  d="M60 34l6.5 17.5L84 58l-17.5 6.5L60 82l-6.5-17.5L36 58l17.5-6.5L60 34zm25.5 6.5l2.2 6 6 2.2-6 2.2-2.2 6-2.2-6-6-2.2 6-2.2 2.2-6zm-51 34l2.2 6 6 2.2-6 2.2-2.2 6-2.2-6-6-2.2 6-2.2 2.2-6z"
-                  fill="currentColor" />
-              </svg>
-            </div>
-          </div>
-        </div>
+      </div>
+      <div class="placeholder-frame hero-photo-frame">
+        <img src="assets/images/hero/susan-dizzy.webp" alt="Susan Starkey" class="hero-photo">
       </div>
     </section>
 
-    <!-- SERVICES SECTION -->
-    <section id="services" class="services">
-      <div class="section-divider">
-        <span class="divider-line"></span>
-        <h2 class="divider-title">OUR SERVICES ✦</h2>
-        <span class="divider-line"></span>
+    <section class="layout-section home-how" aria-labelledby="how-title">
+      <div class="section-heading">
+        <p class="page-kicker">How It Works</p>
+        <h2 id="how-title">A simple path to dependable care.</h2>
       </div>
 
-      <div class="services-grid">
-        <!-- Daily Care Card -->
-        <article class="service-card card-green">
-          <div class="card-icon-wrapper">
-            <!-- Bowl Icon -->
-            <svg viewBox="0 0 64 64" class="card-icon" fill="currentColor">
-              <path
-                d="M54 38c0-5-3.1-9.3-7.5-11.1L32 15 17.5 26.9C13.1 28.7 10 33 10 38v10a4 4 0 0 0 4 4h36a4 4 0 0 0 4-4V38zM20 28.5L32 18.7l12 9.8V32H20v-3.5zm22 20.5H22v-4h20v4zm6-8H16v-3h32v3z" />
-              <circle cx="32" cy="41" r="3" />
-            </svg>
-          </div>
-          <h3>Daily Care</h3>
-          <p>
-            Feeding, fresh water, litter care, medication reminders, habitat checks, and routine support.
-          </p>
-          <div class="card-paw-footer">✧</div>
+      <div class="home-steps-grid">
+        <article class="home-step">
+          <span class="home-step__number">01</span>
+          <h3>Contact Susan</h3>
+          <p>Start with a quick public inquiry so Susan can learn what kind of care you need.</p>
         </article>
-
-        <!-- Pet Sitting Card -->
-        <article class="service-card card-yellow">
-          <div class="card-icon-wrapper">
-            <!-- House Icon -->
-            <svg viewBox="0 0 64 64" class="card-icon" fill="currentColor">
-              <path d="M32 10L10 28h6v26h14V40h4v14h14V28h6L32 10zm12 40H38V36H26v14H20V26.2l12-9.8 12 9.8V50z" />
-              <path d="M32 24a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
-            </svg>
-          </div>
-          <h3>Pet Sitting</h3>
-          <p>
-            Loving in-home care for pets of all species while you're away for the day, overnight, or on vacation.
-          </p>
-          <div class="card-paw-footer">✧</div>
+        <article class="home-step">
+          <span class="home-step__number">02</span>
+          <h3>Schedule a Meet &amp; Greet</h3>
+          <p>Meet in person, talk through routines, and make sure the care plan fits.</p>
         </article>
-
-        <!-- Companion Care Card -->
-        <article class="service-card card-brown">
-          <div class="card-icon-wrapper">
-            <!-- Heart Icon -->
-            <svg viewBox="0 0 64 64" class="card-icon" fill="currentColor">
-              <path
-                d="M32 52.8L12.9 33.7c-5.1-5.1-5.1-13.3 0-18.4s13.3-5.1 18.4 0L32 16l.7-.7c5.1-5.1 13.3-5.1 18.4 0s5.1 13.3 0 18.4L32 52.8z" />
-            </svg>
-          </div>
-          <h3>Companion Care</h3>
-          <p>
-            Playtime, enrichment, cuddles, observation, and attention tailored to your pet's personality.
-          </p>
-          <div class="card-paw-footer">✧</div>
+        <article class="home-step">
+          <span class="home-step__number">03</span>
+          <h3>Complete Client Forms</h3>
+          <p>Share the practical details before care begins so everything is ready.</p>
+        </article>
+        <article class="home-step">
+          <span class="home-step__number">04</span>
+          <h3>Enjoy Peace of Mind</h3>
+          <p>Leave knowing your pets are cared for in the place they know best.</p>
         </article>
       </div>
     </section>
 
-    <!-- BIO SECTION -->
-    <section id="about" class="bio">
-      <div class="bio-container">
-        <div class="bio-visual">
-          <div class="polaroid-wrapper bio-polaroid">
-            <div class="atomic-bursts atomic-bursts-bio" aria-hidden="true">
-              <svg class="atomic-burst atomic-burst-a" viewBox="0 0 28 28" fill="currentColor">
-                <path d="M16 1.5l3.2 8.3 8.3 3.2-8.3 3.2L16 24.5l-3.2-8.3-8.3-3.2 8.3-3.2L16 1.5z" />
-              </svg>
-              <svg class="atomic-burst atomic-burst-b" viewBox="0 0 28 28" fill="currentColor">
-                <path d="M16 4.5l2.1 5.9L24 12.5l-5.9 2.1L16 20.5l-2.1-5.9L8 12.5l5.9-2.1L16 4.5z" />
-              </svg>
-              <svg class="atomic-burst atomic-burst-c" viewBox="0 0 28 28" fill="currentColor">
-                <path d="M16 6l1.5 4.1 4.1 1.5-4.1 1.5L16 17.2l-1.5-4.1-4.1-1.5 4.1-1.5L16 6z" />
-              </svg>
-              <svg class="atomic-burst atomic-burst-d" viewBox="0 0 28 28" fill="currentColor">
-                <path d="M16 10.5l1 2.8 2.8 1-2.8 1-1 2.8-1-2.8-2.8-1 2.8-1 1-2.8z" />
-              </svg>
-            </div>
-            <div class="tape-graphic top-tape-skew"></div>
-            <div class="polaroid-frame">
-              <img src="assets/images/birdturtle.png" alt="Bird and turtle illustration" class="polaroid-img">
-              <div class="polaroid-caption" aria-hidden="true"></div>
-            </div>
-            <!-- Circular Overlapping Badge -->
-            <div class="heart-badge">
-              <div class="heart-badge-inner">
-                <span class="badge-title">SMALL CLIENT LIST</span>
-                <span class="badge-heart">♥</span>
-                <span class="badge-sub">BIG HEART</span>
-              </div>
-            </div>
-          </div>
-        </div>
+    <section class="layout-section home-services-teaser" aria-labelledby="services-preview-title">
+      <div class="section-heading">
+        <p class="page-kicker">Services Preview</p>
+        <h2 id="services-preview-title">Thoughtful care for dogs, cats, birds, reptiles, rabbits, fish, and other small pets.</h2>
+      </div>
 
-        <div class="bio-copy">
-          <h2>Hi, I'm Susan Starkey!</h2>
+      <div class="section-actions">
+        <a href="pages/services.html">View Services &rarr;</a>
+      </div>
+    </section>
+
+    <section class="layout-section" aria-labelledby="about-preview-title">
+      <div class="preview-grid">
+        <div class="placeholder-frame placeholder-frame--small" aria-label="Susan photo placeholder">
+          [Susan Photo Placeholder]
+        </div>
+        <div>
+          <p class="page-kicker">About Susan</p>
+          <h2 id="about-preview-title">Personal care from a steady local sitter.</h2>
           <p>
-            Animals have always had my heart. I started Starkey Pet Sitting to provide the kind of care I'd want for my
-            own pets—reliable, loving, and personal.
+            Placeholder intro for Susan. This area will later introduce her experience, approach to in-home care, and
+            what clients can expect when they work with Starkey Pet Sitting.
           </p>
-          <div class="bio-footer">
-            <span class="signature-text">I can't wait to meet you! ✦</span>
-
-            <!-- Parrot & Tortoise Line Art Sketch -->
-            <div class="sketch-illustration">
-              <svg viewBox="0 0 200 120" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
-                stroke-linejoin="round" class="sketch-svg">
-                <!-- Parrot Outline -->
-                <path d="M45,25 C47,16 57,14 62,22 C67,30 63,48 57,60 C54,67 47,80 47,85" />
-                <path d="M62,22 C65,22 68,18 66,15 C64,12 60,13 57,16 M47,35 C52,38 56,45 54,55 C52,65 47,75 44,80" />
-                <path d="M47,85 L44,95 L49,92 L53,95 L50,85" fill="none" />
-                <circle cx="53" cy="22" r="1" fill="currentColor" />
-
-                <!-- Tortoise Outline -->
-                <path
-                  d="M98,82 C94,82 86,77 86,68 C86,50 112,45 130,58 C139,64 148,64 152,67 C156,69 159,72 161,75 C163,77 161,82 152,82" />
-                <!-- Shell Pattern/Lines -->
-                <path d="M90,68 C94,55 112,50 130,58 C135,60 138,64 140,67" />
-                <path d="M108,52 L108,68" />
-                <path d="M122,55 L118,68" />
-                <!-- Legs & Tail -->
-                <path d="M98,82 C98,88 104,88 104,82" />
-                <path d="M134,82 C134,88 140,88 140,82" />
-                <path d="M86,72 C83,72 82,75 81,74" />
-                <!-- Eye -->
-                <circle cx="155" cy="71" r="0.8" fill="currentColor" />
-              </svg>
-            </div>
+          <div class="section-actions">
+            <a href="pages/about.html">Read About Susan</a>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- CORE VALUES SECTION -->
-    <section class="values-banner">
-      <div class="values-container">
-        <!-- Value 1 -->
-        <div class="value-item">
-          <div class="value-icon">
-            <svg viewBox="0 0 24 24" fill="currentColor">
-              <path
-                d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 15l-4-4 1.41-1.41L10 13.17l5.59-5.59L17 9l-7 7z" />
-            </svg>
-          </div>
-          <h3>Trustworthy & Safe</h3>
-          <p>Your pets and home are in safe, responsible hands.</p>
-        </div>
-
-        <!-- Value 2 -->
-        <div class="value-item">
-          <div class="value-icon">
-            <svg viewBox="0 0 24 24" fill="currentColor">
-              <path
-                d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
-            </svg>
-          </div>
-          <h3>Local & Dependable</h3>
-          <p>Proudly serving our community with care.</p>
-        </div>
-
-        <!-- Value 3 -->
-        <div class="value-item">
-          <div class="value-icon">
-            <svg viewBox="0 0 24 24" fill="currentColor">
-              <path
-                d="M12.65 10C11.83 7.67 9.61 6 7 6c-3.31 0-6 2.69-6 6s2.69 6 6 6c2.61 0 4.83-1.67 5.65-4H17v4h4v-4h2v-4H12.65zM7 14c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2z" />
-            </svg>
-          </div>
-          <h3>Respectful & Reliable</h3>
-          <p>We follow your routine and treat your home with respect.</p>
-        </div>
-
-        <!-- Value 4 -->
-        <div class="value-item">
-          <div class="value-icon">
-            <svg viewBox="0 0 24 24" fill="currentColor">
-              <circle cx="12" cy="12" r="3.2" />
-              <path
-                d="M9 2L7.17 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2h-3.17L15 2H9zm3 15c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5z" />
-            </svg>
-          </div>
-          <h3>Updates You'll Love</h3>
-          <p>Photo updates and messages so you can relax and enjoy your time away.</p>
+    <section class="framework-footer" aria-labelledby="final-cta-title">
+      <div class="framework-footer__panel">
+        <h2 id="final-cta-title">Ready to talk through your pet care needs?</h2>
+        <p>Use the public inquiry form to reach Susan and start the conversation.</p>
+        <div class="section-actions">
+          <a href="pages/contact.html" class="cta-button">Contact Susan</a>
         </div>
       </div>
-    </section>
-
-    <!-- REVIEWS SECTION -->
-    <section id="reviews" class="reviews">
-      <div class="reviews-container">
-        <div class="testimonial-card">
-          <div class="quote-icon">“</div>
-          <blockquote>
-            Starkey is incredible with our two cats. We came home to happy, relaxed pets and a spotless home. We trust
-            her completely!
-          </blockquote>
-          <cite>— Megan R.</cite>
-        </div>
-      </div>
-    </section>
-
-    <!-- TEMPORARY STYLE GUIDE -->
-    <section class="style-guide" aria-labelledby="style-guide-title">
-      <div class="style-guide-container">
-        <div class="style-guide-header">
-          <p class="text-small text-burnt-orange">Design System Foundation</p>
-          <h2 id="style-guide-title">Temporary Style Guide</h2>
-          <p>
-            A working reference for the new typography, colors, links, CTA buttons, and fluid hero scale.
-          </p>
-        </div>
-
-        <div class="style-guide-grid">
-          <article class="style-guide-panel">
-            <h3>Typography</h3>
-            <div class="style-guide-stack">
-              <p class="text-logo">Starkey Pet Sitting</p>
-              <p class="text-heading-xl">Heading XL: Loving care for every companion.</p>
-              <p class="text-heading-lg">Heading LG: Meet and greet details.</p>
-              <p class="text-body">Body text uses Nunito for clear, friendly reading across pet care pages.</p>
-              <p class="text-small">Small text keeps support notes compact and readable.</p>
-            </div>
-          </article>
-
-          <article class="style-guide-panel">
-            <h3>Links and CTAs</h3>
-            <div class="style-guide-stack">
-              <p>
-                This is a <a href="pages/contact.html">standard text link</a> with underline, hover, and focus-visible
-                states.
-              </p>
-              <div class="style-guide-actions">
-                <a href="pages/contact.html" class="cta-button">Schedule a Meet & Greet</a>
-                <button class="cta-button" type="button">Button CTA</button>
-              </div>
-            </div>
-          </article>
-
-          <article class="style-guide-panel">
-            <h3>Color Swatches</h3>
-            <div class="style-guide-swatches">
-              <div class="style-guide-swatch bg-cream text-charcoal">Cream<br>#F4EFE3</div>
-              <div class="style-guide-swatch bg-charcoal is-dark">Charcoal<br>#2B2B2B</div>
-              <div class="style-guide-swatch bg-atomic-teal is-dark">Atomic Teal<br>#2D8C9F</div>
-              <div class="style-guide-swatch bg-burnt-orange is-dark">Burnt Orange<br>#D86A2E</div>
-              <div class="style-guide-swatch bg-mustard-gold text-charcoal">Mustard Gold<br>#C9A227</div>
-              <div class="style-guide-swatch bg-soft-pink text-charcoal">Soft Pink<br>#D8B9C7</div>
-              <div class="style-guide-swatch bg-olive text-charcoal">Olive<br>#AEB53B</div>
-            </div>
-          </article>
-
-          <article class="style-guide-hero-sample">
-            <h3 class="text-hero-fluid">Hero text scales fluidly.</h3>
-            <p>
-              The hero headline and major hero spacing use clamp() so the first viewport can breathe on desktop while
-              staying compact on smaller screens.
-            </p>
-          </article>
-        </div>
+      <div class="copyright-bar">
+        <p>&copy; <span id="year"></span> Starkey Pet Sitting.</p>
       </div>
     </section>
   </main>
-
-  <!-- FOOTER BANNER -->
-  <footer class="footer-banner">
-    <div class="footer-banner-container">
-      <div class="footer-stamp">
-        <svg viewBox="0 0 120 120" class="stamp-svg">
-          <path id="footer-stamp-text-path" d="M 60,60 m -45,0 a 45,45 0 1,1 90,0 a 45,45 0 1,1 -90,0" fill="none" />
-          <text class="stamp-text">
-            <textPath href="#footer-stamp-text-path" startOffset="0%">LOCAL CARE • YOU CAN TRUST • </textPath>
-          </text>
-          <path class="stamp-paw"
-            d="M60 34l6.5 17.5L84 58l-17.5 6.5L60 82l-6.5-17.5L36 58l17.5-6.5L60 34zm25.5 6.5l2.2 6 6 2.2-6 2.2-2.2 6-2.2-6-6-2.2 6-2.2 2.2-6zm-51 34l2.2 6 6 2.2-6 2.2-2.2 6-2.2-6-6-2.2 6-2.2 2.2-6z"
-            fill="currentColor" />
-        </svg>
-      </div>
-
-      <div class="footer-banner-copy">
-        <h2>Let's give your pet the care they deserve.</h2>
-        <a href="pages/contact.html" class="cta-button">Schedule a Meet & Greet</a>
-      </div>
-    </div>
-
-    <!-- COPYRIGHT BAR -->
-    <div class="copyright-bar">
-      <p>© <span id="year"></span> Starkey Pet Sitting. Made with love, paw prints, feathers, fins, and scales.</p>
-    </div>
-  </footer>
 </body>
 
 </html>
