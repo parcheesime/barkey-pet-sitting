@@ -1,7 +1,7 @@
-/* === Starkey Pet Sitting - Retro Redesign Theme Styles === */
+/* === Starkey Pet Sitting - Design System Foundation === */
 
 /* Imports */
-@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Patrick+Hand&family=Freckle+Face&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;500;600;700&family=Nunito:wght@400;600;700;800&family=Poiret+One&display=swap');
 
 /* CSS Variables */
 :root {
@@ -45,16 +45,16 @@
   --page-width: min(100% - 80px, var(--container-max));
   --readable-width: min(100% - 80px, var(--container-readable));
   --font-hero: clamp(5rem, 6.8vw, 12rem);
-  --font-section-title: clamp(2.75rem, 3.2vw, 5rem);
-  --font-card-title: clamp(1.75rem, 1.35vw, 2rem);
-  --font-body: clamp(1.25rem, 1vw, 1.375rem);
-  --font-small: clamp(0.98rem, 0.68vw, 1.08rem);
-  --font-button: clamp(1.3125rem, 1vw, 1.4375rem);
-  --font-nav: clamp(1.625rem, 1.2vw, 1.75rem);
-  --font-card-body: clamp(1.25rem, 1vw, 1.375rem);
-  --font-feature-title: clamp(1.5rem, 1.15vw, 1.625rem);
-  --font-feature-body: clamp(1.25rem, 1vw, 1.375rem);
-  --font-footer: clamp(1rem, 0.78vw, 1.125rem);
+  --font-section-title: 4rem;
+  --font-card-title: 2rem;
+  --font-body: 1.375rem;
+  --font-small: 1rem;
+  --font-button: 1.25rem;
+  --font-nav: 1.25rem;
+  --font-card-body: 1.25rem;
+  --font-feature-title: 1.5rem;
+  --font-feature-body: 1.2rem;
+  --font-footer: 1rem;
 }
 
 .theme-retro-postcard {
@@ -168,6 +168,98 @@
   --mobile-nav-shadow: 0 10px 15px rgba(23, 41, 67, 0.2);
 }
 
+:root,
+.theme-retro-postcard,
+.theme-lavender-barkey,
+.theme-bold-retro-pet-shop {
+  /* Brand color system */
+  --color-cream: #F4EFE3;
+  --color-charcoal: #2B2B2B;
+  --color-atomic-teal: #2D8C9F;
+  --color-burnt-orange: #D86A2E;
+  --color-mustard-gold: #C9A227;
+  --color-soft-pink: #D8B9C7;
+  --color-olive: #AEB53B;
+  --color-white: #FFFFFF;
+
+  /* Typography */
+  --font-logo: "Poiret One", system-ui, sans-serif;
+  --font-heading: "Josefin Sans", system-ui, sans-serif;
+  --font-body-family: "Nunito", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+
+  /* Breakpoint tokens. CSS custom properties are documented here, with literal media queries below. */
+  --breakpoint-mobile: 767px;
+  --breakpoint-tablet: 1023px;
+  --breakpoint-desktop: 1024px;
+
+  /* Spacing and layout */
+  --space-2xs: 0.25rem;
+  --space-xs: 0.5rem;
+  --space-sm: 0.75rem;
+  --space-md: 1rem;
+  --space-lg: 1.5rem;
+  --space-xl: 2rem;
+  --space-2xl: 3rem;
+  --space-3xl: 4.5rem;
+  --space-hero-block: clamp(4.75rem, 6vw, 9rem);
+  --space-hero-gap: clamp(3rem, 4vw, 7rem);
+  --page-gutter: 40px;
+  --page-width: min(100% - (var(--page-gutter) * 2), var(--container-max));
+  --readable-width: min(100% - (var(--page-gutter) * 2), var(--container-readable));
+
+  /* Type scale. Clamp is reserved for hero typography and major spacing. */
+  --font-hero: clamp(5rem, 6.8vw, 12rem);
+  --font-section-title: 4rem;
+  --font-card-title: 2rem;
+  --font-body: 1.375rem;
+  --font-small: 1rem;
+  --font-button: 1.25rem;
+  --font-nav: 1.25rem;
+  --font-card-body: 1.25rem;
+  --font-feature-title: 1.5rem;
+  --font-feature-body: 1.2rem;
+  --font-footer: 1rem;
+
+  /* Current-site semantic aliases */
+  --cream: var(--color-cream);
+  --paper: var(--color-white);
+  --paper-solid: var(--color-white);
+  --olive: var(--color-atomic-teal);
+  --olive-light: color-mix(in srgb, var(--color-atomic-teal) 12%, var(--color-white));
+  --mustard: var(--color-mustard-gold);
+  --mustard-hover: var(--color-burnt-orange);
+  --brown: var(--color-burnt-orange);
+  --ink: var(--color-charcoal);
+  --ink-light: color-mix(in srgb, var(--color-charcoal) 72%, var(--color-white));
+  --border: color-mix(in srgb, var(--color-charcoal) 18%, var(--color-cream));
+  --shadow: rgba(43, 43, 43, 0.1);
+  --shadow-dark: rgba(43, 43, 43, 0.22);
+  --header-start: var(--color-atomic-teal);
+  --header-end: color-mix(in srgb, var(--color-atomic-teal) 78%, var(--color-charcoal));
+  --header-border: rgba(244, 239, 227, 0.16);
+  --accent-soft: color-mix(in srgb, var(--color-soft-pink) 45%, var(--color-white));
+  --accent-muted: rgba(216, 106, 46, 0.24);
+  --blue: var(--color-soft-pink);
+  --blue-light: color-mix(in srgb, var(--color-soft-pink) 35%, var(--color-white));
+  --badge-bg: var(--color-burnt-orange);
+  --link-color: var(--color-atomic-teal);
+  --link-hover: var(--color-burnt-orange);
+  --focus-color: var(--color-burnt-orange);
+  --light-border: rgba(244, 239, 227, 0.18);
+  --light-border-strong: rgba(255, 255, 255, 0.36);
+  --ink-border-soft: rgba(43, 43, 43, 0.1);
+  --ink-border-medium: rgba(43, 43, 43, 0.18);
+  --paper-border-soft: rgba(43, 43, 43, 0.1);
+  --focus-ring: rgba(216, 106, 46, 0.22);
+  --tape-bg: rgba(216, 185, 199, 0.46);
+  --header-shadow: 0 4px 12px rgba(43, 43, 43, 0.14);
+  --logo-inset-shadow: inset 0 2px 4px rgba(43, 43, 43, 0.1);
+  --cta-shadow: 0 4px 10px rgba(43, 43, 43, 0.18);
+  --polaroid-shadow: 0 12px 28px rgba(43, 43, 43, 0.12), 0 4px 10px rgba(43, 43, 43, 0.06);
+  --badge-shadow: 0 6px 16px rgba(216, 106, 46, 0.34);
+  --mobile-nav-shadow: 0 10px 15px rgba(43, 43, 43, 0.18);
+}
+
 /* Global Reset */
 * {
   box-sizing: border-box;
@@ -177,18 +269,20 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
-  font-family: "Nunito Sans", system-ui, -apple-system, sans-serif;
+  font-family: var(--font-body-family);
   color: var(--ink);
   background-color: var(--cream);
   line-height: 1.6;
   font-size: var(--font-body);
+  overflow-x: hidden;
 }
 
 p {
-  font-size: 1.75rem;
+  font-size: var(--font-body);
 }
 
 /* Typography */
@@ -196,9 +290,10 @@ h1,
 h2,
 h3,
 h4 {
-  font-family: "Fraunces", Georgia, serif;
+  font-family: var(--font-heading);
   color: var(--olive);
-  line-height: 1.2;
+  line-height: 1.12;
+  letter-spacing: 0;
 }
 
 h1 {
@@ -219,13 +314,141 @@ h3 {
 }
 
 a {
-  color: inherit;
-  text-decoration: none;
+  color: var(--link-color);
+  text-decoration-color: currentColor;
+  text-decoration-line: underline;
+  text-decoration-thickness: 0.09em;
+  text-underline-offset: 0.18em;
+  transition: color 0.2s ease, text-decoration-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+a:hover {
+  color: var(--link-hover);
+  text-decoration-thickness: 0.12em;
+}
+
+a:focus-visible,
+button:focus-visible,
+summary:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible {
+  outline: 3px solid var(--focus-color);
+  outline-offset: 4px;
+}
+
+/* Typography Utilities */
+.font-logo {
+  font-family: var(--font-logo);
+}
+
+.font-heading {
+  font-family: var(--font-heading);
+}
+
+.font-body {
+  font-family: var(--font-body-family);
+}
+
+.text-logo {
+  font-family: var(--font-logo);
+  font-size: 3rem;
+  font-weight: 400;
+  line-height: 1.05;
+}
+
+.text-heading-xl {
+  font-family: var(--font-heading);
+  font-size: var(--font-section-title);
+  font-weight: 700;
+  line-height: 1.08;
+}
+
+.text-heading-lg {
+  font-family: var(--font-heading);
+  font-size: var(--font-card-title);
+  font-weight: 700;
+  line-height: 1.12;
+}
+
+.text-body {
+  font-family: var(--font-body-family);
+  font-size: var(--font-body);
+  line-height: 1.6;
+}
+
+.text-small {
+  font-size: var(--font-small);
+  line-height: 1.5;
+}
+
+.text-hero-fluid {
+  font-family: var(--font-heading);
+  font-size: var(--font-hero);
+  font-weight: 700;
+  line-height: 0.95;
+}
+
+/* Color Utilities */
+.bg-cream {
+  background-color: var(--color-cream);
+}
+
+.bg-charcoal {
+  background-color: var(--color-charcoal);
+}
+
+.bg-atomic-teal {
+  background-color: var(--color-atomic-teal);
+}
+
+.bg-burnt-orange {
+  background-color: var(--color-burnt-orange);
+}
+
+.bg-mustard-gold {
+  background-color: var(--color-mustard-gold);
+}
+
+.bg-soft-pink {
+  background-color: var(--color-soft-pink);
+}
+
+.bg-olive {
+  background-color: var(--color-olive);
+}
+
+.text-cream {
+  color: var(--color-cream);
+}
+
+.text-charcoal {
+  color: var(--color-charcoal);
+}
+
+.text-atomic-teal {
+  color: var(--color-atomic-teal);
+}
+
+.text-burnt-orange {
+  color: var(--color-burnt-orange);
+}
+
+.text-mustard-gold {
+  color: var(--color-mustard-gold);
+}
+
+.text-soft-pink {
+  color: var(--color-soft-pink);
+}
+
+.text-olive {
+  color: var(--color-olive);
 }
 
 /* Custom Text Accents */
 .cursive-accent {
-  font-family: "Patrick Hand", cursive;
+  font-family: var(--font-logo);
   font-size: 1.15em;
   color: var(--brown);
   display: inline-block;
@@ -241,7 +464,8 @@ a {
 }
 
 /* Primary CTA Buttons */
-.button {
+.cta-button,
+.button.primary {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -250,32 +474,34 @@ a {
   white-space: normal;
   padding: 0.95rem 2rem;
   font-size: var(--font-button);
-  /* Unified CTA font size */
   font-weight: 700;
   line-height: 1.2;
   border-radius: 9999px;
-  transition: all 0.2s ease-in-out;
+  transition: background-color 0.2s ease, color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
   cursor: pointer;
-}
-
-.button.primary {
   background-color: var(--mustard);
   color: var(--ink);
+  text-decoration: none;
   box-shadow: 0 4px 10px var(--shadow);
   border: 1px solid var(--ink-border-medium);
 }
 
+.cta-button:hover,
 .button.primary:hover {
   background-color: var(--mustard-hover);
+  color: var(--paper);
   transform: translateY(-2px);
   box-shadow: 0 6px 14px var(--shadow-dark);
 }
 
+.cta-button:active,
 .button.primary:active {
   transform: translateY(0);
 }
 
+.hero-actions .cta-button,
 .hero-actions .button,
+.footer-banner-copy .cta-button,
 .footer-banner-copy .button {
   min-height: 62px;
   padding: 0 2rem;
@@ -303,6 +529,7 @@ a {
   align-items: center;
   gap: 1rem;
   color: var(--paper);
+  text-decoration: none;
 }
 
 .logo-badge {
@@ -328,12 +555,10 @@ a {
 }
 
 .brand-name {
-  font-family: "Freckle Face", display;
+  font-family: var(--font-logo);
   font-size: 3.4375rem;
-  /* Sized slightly larger for Freckle Face display style */
   font-weight: 400;
-  /* Freckle Face uses normal weight */
-  letter-spacing: 0.02em;
+  letter-spacing: 0;
   line-height: 1.1;
 }
 
@@ -349,7 +574,7 @@ a {
 .site-nav {
   display: flex;
   align-items: center;
-  gap: clamp(2rem, 1.8vw, 3.25rem);
+  gap: 2.5rem;
 }
 
 .site-nav a {
@@ -359,6 +584,7 @@ a {
   line-height: 1.25;
   transition: opacity 0.2s ease;
   padding: 0.5rem 0.25rem;
+  text-decoration: none;
 }
 
 .site-nav a:hover {
@@ -369,27 +595,16 @@ a {
   border-bottom: 2px solid var(--mustard);
 }
 
-.site-nav .nav-cta {
-  background-color: var(--mustard);
-  color: var(--ink);
+.site-nav .nav-cta,
+.site-nav .cta-button {
   min-height: 62px;
   padding: 0 2rem;
-  border-radius: 9999px;
-  box-shadow: var(--cta-shadow);
-  font-weight: 700;
   font-size: var(--font-nav);
-  /* Unified CTA font size */
   line-height: 1;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  text-wrap: pretty;
-  white-space: normal;
 }
 
-.site-nav .nav-cta:hover {
-  background-color: var(--mustard-hover);
+.site-nav .nav-cta:hover,
+.site-nav .cta-button:hover {
   opacity: 1;
 }
 
@@ -412,7 +627,7 @@ a {
 
 /* Hero Section */
 .hero {
-  padding: clamp(5.5rem, 6vw, 9rem) 0 clamp(4.75rem, 5vw, 8rem);
+  padding: var(--space-hero-block) 0 clamp(4.75rem, 5vw, 8rem);
   overflow: hidden;
 }
 
@@ -422,7 +637,7 @@ a {
   display: grid;
   grid-template-columns: minmax(0, 1.04fr) minmax(0, 0.96fr);
   align-items: center;
-  gap: clamp(3rem, 4vw, 7rem);
+  gap: var(--space-hero-gap);
 }
 
 .hero-copy {
@@ -457,11 +672,11 @@ a {
 }
 
 .hero-polaroid {
-  width: min(100%, clamp(520px, 34vw, 820px));
+  width: min(100%, 720px);
 }
 
 .bio-polaroid {
-  width: min(100%, clamp(430px, 28vw, 680px));
+  width: min(100%, 580px);
 }
 
 .atomic-bursts {
@@ -486,23 +701,23 @@ a {
 }
 
 .atomic-burst-a {
-  width: clamp(2rem, 2.4vw, 3.2rem);
-  height: clamp(2rem, 2.4vw, 3.2rem);
+  width: 3rem;
+  height: 3rem;
 }
 
 .atomic-burst-b {
-  width: clamp(1.35rem, 1.7vw, 2.2rem);
-  height: clamp(1.35rem, 1.7vw, 2.2rem);
+  width: 2rem;
+  height: 2rem;
 }
 
 .atomic-burst-c {
-  width: clamp(0.95rem, 1.2vw, 1.5rem);
-  height: clamp(0.95rem, 1.2vw, 1.5rem);
+  width: 1.35rem;
+  height: 1.35rem;
 }
 
 .atomic-burst-d {
-  width: clamp(0.8rem, 1vw, 1.25rem);
-  height: clamp(0.8rem, 1vw, 1.25rem);
+  width: 1rem;
+  height: 1rem;
 }
 
 .atomic-bursts-hero .atomic-burst-a {
@@ -524,8 +739,8 @@ a {
 }
 
 .atomic-bursts-bio .atomic-burst-a {
-  width: clamp(5rem, 6vw, 7.25rem);
-  height: clamp(5rem, 6vw, 7.25rem);
+  width: 6.5rem;
+  height: 6.5rem;
   left: -3.25rem;
   top: -1.1rem;
   transform: rotate(8deg);
@@ -534,28 +749,28 @@ a {
 .atomic-bursts-bio .atomic-burst-b {
   top: 18%;
   right: -2.5rem;
-  width: clamp(2.2rem, 2.6vw, 3.2rem);
-  height: clamp(2.2rem, 2.6vw, 3.2rem);
+  width: 3rem;
+  height: 3rem;
 }
 
 .atomic-bursts-bio .atomic-burst-c {
   bottom: 8%;
   right: -2rem;
-  width: clamp(1.65rem, 2vw, 2.4rem);
-  height: clamp(1.65rem, 2vw, 2.4rem);
+  width: 2.2rem;
+  height: 2.2rem;
 }
 
 .atomic-bursts-bio .atomic-burst-d {
   bottom: 20%;
   left: -2rem;
-  width: clamp(1.35rem, 1.7vw, 2rem);
-  height: clamp(1.35rem, 1.7vw, 2rem);
+  width: 1.8rem;
+  height: 1.8rem;
 }
 
 .polaroid-frame {
   background-color: var(--paper);
   width: 100%;
-  padding: clamp(1.4rem, 1.2vw, 2rem) clamp(1.4rem, 1.2vw, 2rem) clamp(2.75rem, 2.5vw, 4.2rem);
+  padding: 1.8rem 1.8rem 3.5rem;
   border-radius: 4px;
   box-shadow: var(--polaroid-shadow);
   border: 1px solid var(--paper-border-soft);
@@ -582,8 +797,8 @@ a {
 }
 
 .polaroid-caption {
-  font-family: "Patrick Hand", cursive;
-  font-size: clamp(1.8rem, 1.3vw, 2.6rem);
+  font-family: var(--font-logo);
+  font-size: 2.2rem;
   text-align: center;
   margin-top: 1.25rem;
   color: var(--ink-light);
@@ -623,8 +838,8 @@ a {
   position: absolute;
   top: -24px;
   right: -24px;
-  width: clamp(112px, 7vw, 168px);
-  height: clamp(112px, 7vw, 168px);
+  width: 140px;
+  height: 140px;
   background-color: transparent;
   color: var(--mustard);
   z-index: 30;
@@ -638,7 +853,7 @@ a {
 }
 
 .stamp-text {
-  font-family: "Source Sans 3", sans-serif;
+  font-family: var(--font-body-family);
   font-size: 8px;
   font-weight: 800;
   fill: var(--ink);
@@ -677,7 +892,7 @@ a {
 
 .divider-title {
   margin: 0 1.5rem;
-  font-family: "Fraunces", serif;
+  font-family: var(--font-heading);
   font-weight: 700;
   font-size: 2.625rem;
   color: var(--brown);
@@ -695,15 +910,15 @@ a {
   margin-inline: auto;
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: clamp(1.75rem, 2vw, 3rem);
+  gap: 2.5rem;
 }
 
 .service-card {
   background-color: var(--paper);
   border: 1px solid var(--border);
   border-radius: 20px;
-  min-height: clamp(320px, 20vw, 460px);
-  padding: clamp(3rem, 2.2vw, 4.5rem) clamp(2.35rem, 2vw, 4rem) clamp(2.35rem, 1.8vw, 3.5rem);
+  min-height: 380px;
+  padding: 3.5rem 2.75rem 2.75rem;
   box-shadow: 0 6px 18px var(--shadow);
   transition: all 0.3s ease;
   position: relative;
@@ -716,8 +931,8 @@ a {
 }
 
 .card-icon-wrapper {
-  width: clamp(4.6rem, 3vw, 6.5rem);
-  height: clamp(4.6rem, 3vw, 6.5rem);
+  width: 5.5rem;
+  height: 5.5rem;
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -792,7 +1007,7 @@ a {
   display: grid;
   grid-template-columns: 0.95fr 1.05fr;
   align-items: center;
-  gap: clamp(3rem, 5vw, 5.75rem);
+  gap: 4.5rem;
 }
 
 .bio-visual {
@@ -872,7 +1087,7 @@ a {
 }
 
 .signature-text {
-  font-family: "Patrick Hand", cursive;
+  font-family: var(--font-logo);
   font-size: 2.25rem;
   color: var(--brown);
   font-weight: 700;
@@ -949,7 +1164,7 @@ a {
 .testimonial-card {
   background-color: var(--paper);
   border: 1px dashed var(--border);
-  padding: clamp(3rem, 3vw, 5.5rem);
+  padding: 4.5rem;
   border-radius: 24px;
   text-align: center;
   box-shadow: 0 4px 15px var(--shadow);
@@ -957,7 +1172,7 @@ a {
 }
 
 .quote-icon {
-  font-family: "Fraunces", serif;
+  font-family: var(--font-heading);
   font-size: 5rem;
   color: var(--mustard);
   line-height: 1;
@@ -968,8 +1183,8 @@ a {
 }
 
 .testimonial-card blockquote {
-  font-family: "Fraunces", serif;
-  font-size: clamp(1.75rem, 1.35vw, 1.875rem);
+  font-family: var(--font-heading);
+  font-size: 1.875rem;
   font-style: italic;
   font-weight: 500;
   color: var(--ink);
@@ -1035,8 +1250,8 @@ a {
 }
 
 .cursive-sub {
-  font-family: "Patrick Hand", cursive;
-  font-size: clamp(1.85rem, 1.35vw, 2.4rem);
+  font-family: var(--font-logo);
+  font-size: 2.2rem;
   color: var(--mustard);
   font-weight: 600;
 }
@@ -1282,7 +1497,7 @@ a {
 .downloads-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: clamp(1.5rem, 2vw, 2.25rem);
+  gap: 2rem;
 }
 
 .download-card {
@@ -1368,7 +1583,7 @@ a {
 
 .faq-question {
   padding: 1.35rem 1.75rem;
-  font-family: "Fraunces", serif;
+  font-family: var(--font-heading);
   font-size: calc(var(--font-card-title) * 0.72);
   font-weight: 600;
   color: var(--olive);
@@ -1410,15 +1625,108 @@ a {
   margin-top: 1.25rem;
 }
 
+/* Temporary Style Guide */
+.style-guide {
+  padding: var(--space-3xl) 0;
+  background-color: var(--paper);
+  border-top: 1px solid var(--border);
+}
+
+.style-guide-container {
+  width: var(--page-width);
+  margin-inline: auto;
+  display: grid;
+  gap: var(--space-2xl);
+}
+
+.style-guide-header {
+  max-width: 860px;
+}
+
+.style-guide-header p {
+  color: var(--ink-light);
+  max-width: 54rem;
+}
+
+.style-guide-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--space-xl);
+}
+
+.style-guide-panel {
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: var(--space-xl);
+  background-color: var(--cream);
+}
+
+.style-guide-panel h3 {
+  margin-bottom: var(--space-lg);
+}
+
+.style-guide-stack {
+  display: grid;
+  gap: var(--space-md);
+}
+
+.style-guide-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-md);
+  align-items: center;
+}
+
+.style-guide-swatches {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: var(--space-md);
+}
+
+.style-guide-swatch {
+  min-height: 112px;
+  border: 1px solid var(--ink-border-medium);
+  border-radius: 8px;
+  padding: var(--space-sm);
+  display: flex;
+  align-items: flex-end;
+  font-size: var(--font-small);
+  font-weight: 800;
+  line-height: 1.2;
+}
+
+.style-guide-swatch.is-dark {
+  color: var(--paper);
+}
+
+.style-guide-hero-sample {
+  padding: var(--space-2xl);
+  border-radius: 8px;
+  background-color: var(--color-atomic-teal);
+  color: var(--paper);
+}
+
+.style-guide-hero-sample h3 {
+  color: inherit;
+  margin-bottom: var(--space-md);
+}
+
+.style-guide-hero-sample p {
+  color: inherit;
+  max-width: 44rem;
+}
+
 /* === Responsive Media Queries === */
+/* Tablet breakpoint: current nav and two-column card layouts need to collapse below 1024px. */
 @media (max-width: 1023px) {
   :root {
     --container-max: 1080px;
     --container-readable: 860px;
-    --page-width: min(100% - 40px, var(--container-max));
-    --readable-width: min(100% - 40px, var(--container-readable));
+    --page-gutter: 20px;
+    --page-width: min(100% - (var(--page-gutter) * 2), var(--container-max));
+    --readable-width: min(100% - (var(--page-gutter) * 2), var(--container-readable));
     --font-hero: clamp(3.35rem, 7vw, 5rem);
-    --font-section-title: clamp(2.25rem, 4.8vw, 3rem);
+    --font-section-title: 3rem;
     --font-card-title: 1.75rem;
     --font-body: 1.08rem;
     --font-small: 0.96rem;
@@ -1480,7 +1788,8 @@ a {
     padding: 0.5rem 0;
   }
 
-  .site-nav .nav-cta {
+  .site-nav .nav-cta,
+  .site-nav .cta-button {
     width: 100%;
     min-height: auto;
     padding: 0.65rem 1.35rem;
@@ -1558,16 +1867,22 @@ a {
   .faq-answer {
     padding: 0 1.35rem 1.35rem;
   }
+
+  .style-guide-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
+/* Mobile breakpoint: current cards, values, forms, and downloads become single-column below 768px. */
 @media (max-width: 767px) {
   :root {
     --container-max: 720px;
     --container-readable: 720px;
-    --page-width: min(100% - 32px, var(--container-max));
-    --readable-width: min(100% - 32px, var(--container-readable));
+    --page-gutter: 16px;
+    --page-width: min(100% - (var(--page-gutter) * 2), var(--container-max));
+    --readable-width: min(100% - (var(--page-gutter) * 2), var(--container-readable));
     --font-hero: clamp(2.7rem, 12vw, 3.75rem);
-    --font-section-title: clamp(2rem, 8vw, 2.55rem);
+    --font-section-title: 2.55rem;
     --font-card-title: 1.55rem;
     --font-body: 1.02rem;
     --font-small: 0.93rem;
@@ -1616,13 +1931,16 @@ a {
     font-size: var(--font-body);
   }
 
+  .cta-button,
   .button {
     width: 100%;
     max-width: 360px;
     padding: 0.85rem 1.35rem;
   }
 
+  .hero-actions .cta-button,
   .hero-actions .button,
+  .footer-banner-copy .cta-button,
   .footer-banner-copy .button {
     min-height: auto;
     font-size: var(--font-button);
@@ -1668,6 +1986,10 @@ a {
   .service-card,
   .download-card {
     padding: 2.2rem 1.5rem 1.8rem;
+  }
+
+  .style-guide-swatches {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .card-icon-wrapper {

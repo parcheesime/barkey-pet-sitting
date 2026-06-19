@@ -10,7 +10,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
-    href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Patrick+Hand&family=Freckle+Face&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;500;600;700&family=Nunito:wght@400;600;700;800&family=Poiret+One&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="assets/css/styles.css?v=3">
   <script src="assets/js/script.js" defer></script>
@@ -42,7 +42,7 @@
       <a href="#about">About</a>
       <a href="pages/resources.html">Resources</a>
       <a href="pages/contact.html" class="nav-contact-link">Contact</a>
-      <a href="pages/contact.html" class="nav-cta">Schedule a Meet & Greet</a>
+      <a href="pages/contact.html" class="cta-button nav-cta">Schedule a Meet & Greet</a>
     </nav>
   </header>
 
@@ -57,7 +57,7 @@
             Because every Barkey deserves a Starkey.
           </p>
           <div class="hero-actions">
-            <a href="pages/contact.html" class="button primary">Schedule a Meet & Greet</a>
+            <a href="pages/contact.html" class="cta-button">Schedule a Meet & Greet</a>
           </div>
         </div>
 
@@ -297,6 +297,67 @@
         </div>
       </div>
     </section>
+
+    <!-- TEMPORARY STYLE GUIDE -->
+    <section class="style-guide" aria-labelledby="style-guide-title">
+      <div class="style-guide-container">
+        <div class="style-guide-header">
+          <p class="text-small text-burnt-orange">Design System Foundation</p>
+          <h2 id="style-guide-title">Temporary Style Guide</h2>
+          <p>
+            A working reference for the new typography, colors, links, CTA buttons, and fluid hero scale.
+          </p>
+        </div>
+
+        <div class="style-guide-grid">
+          <article class="style-guide-panel">
+            <h3>Typography</h3>
+            <div class="style-guide-stack">
+              <p class="text-logo">Starkey Pet Sitting</p>
+              <p class="text-heading-xl">Heading XL: Loving care for every companion.</p>
+              <p class="text-heading-lg">Heading LG: Meet and greet details.</p>
+              <p class="text-body">Body text uses Nunito for clear, friendly reading across pet care pages.</p>
+              <p class="text-small">Small text keeps support notes compact and readable.</p>
+            </div>
+          </article>
+
+          <article class="style-guide-panel">
+            <h3>Links and CTAs</h3>
+            <div class="style-guide-stack">
+              <p>
+                This is a <a href="pages/contact.html">standard text link</a> with underline, hover, and focus-visible
+                states.
+              </p>
+              <div class="style-guide-actions">
+                <a href="pages/contact.html" class="cta-button">Schedule a Meet & Greet</a>
+                <button class="cta-button" type="button">Button CTA</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="style-guide-panel">
+            <h3>Color Swatches</h3>
+            <div class="style-guide-swatches">
+              <div class="style-guide-swatch bg-cream text-charcoal">Cream<br>#F4EFE3</div>
+              <div class="style-guide-swatch bg-charcoal is-dark">Charcoal<br>#2B2B2B</div>
+              <div class="style-guide-swatch bg-atomic-teal is-dark">Atomic Teal<br>#2D8C9F</div>
+              <div class="style-guide-swatch bg-burnt-orange is-dark">Burnt Orange<br>#D86A2E</div>
+              <div class="style-guide-swatch bg-mustard-gold text-charcoal">Mustard Gold<br>#C9A227</div>
+              <div class="style-guide-swatch bg-soft-pink text-charcoal">Soft Pink<br>#D8B9C7</div>
+              <div class="style-guide-swatch bg-olive text-charcoal">Olive<br>#AEB53B</div>
+            </div>
+          </article>
+
+          <article class="style-guide-hero-sample">
+            <h3 class="text-hero-fluid">Hero text scales fluidly.</h3>
+            <p>
+              The hero headline and major hero spacing use clamp() so the first viewport can breathe on desktop while
+              staying compact on smaller screens.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
   </main>
 
   <!-- FOOTER BANNER -->
@@ -316,7 +377,7 @@
 
       <div class="footer-banner-copy">
         <h2>Let's give your pet the care they deserve.</h2>
-        <a href="pages/contact.html" class="button primary">Schedule a Meet & Greet</a>
+        <a href="pages/contact.html" class="cta-button">Schedule a Meet & Greet</a>
       </div>
     </div>
 
