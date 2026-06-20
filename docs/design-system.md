@@ -1,8 +1,9 @@
-# Starkey Pet Sitting Design System Notes
+# Barkey Pet Sitting Design System Notes
 
 ## Foundation
 
-- Logo font: Poiret One
+- Display font: Fontdiner Swanky for hero titles and major personality moments
+- Accent font: Pacifico for the Contact Susan badge and small friendly accents
 - Heading font: Josefin Sans
 - Body font: Nunito
 - Primary CTA class: `.cta-button`

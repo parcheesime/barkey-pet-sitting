@@ -4,22 +4,23 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Placeholder services framework for Starkey Pet Sitting." />
-  <title>Services - Starkey Pet Sitting</title>
+  <meta name="description" content="Placeholder services framework for Barkey Pet Sitting." />
+  <title>Services - Barkey Pet Sitting</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
-    href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;500;600;700&family=Nunito:wght@400;600;700;800&family=Poiret+One&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Fontdiner+Swanky&family=Josefin+Sans:wght@400;500;600;700&family=Nunito:wght@400;600;700;800&family=Pacifico&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="../assets/css/styles.css?v=3">
+  <link rel="stylesheet" href="../assets/css/shape-components.css">
   <script src="../assets/js/script.js" defer></script>
 </head>
 
 <body class="layout-shell">
   <header class="site-header layout-rail">
-    <a class="logo" href="../index.html" aria-label="Starkey Pet Sitting home">
+    <a class="logo" href="../index.html" aria-label="Barkey Pet Sitting home">
       <div class="logo-text">
-        <span class="brand-name">Starkey</span>
+        <span class="brand-name">Barkey</span>
         <span class="brand-sub">PET SITTING</span>
       </div>
     </a>
@@ -88,11 +89,22 @@
         <h2 id="services-cta-title">Have a specific care need?</h2>
         <p>Use the inquiry form to tell Susan what your pet needs.</p>
         <div class="section-actions">
-          <a href="contact.html" class="cta-button">Contact Susan</a>
+          <a class="contact-badge" href="contact.html" aria-label="Contact Susan">
+            <img src="../assets/images/shapes/boom-orange.svg" class="contact-badge__boom contact-badge__shape-base"
+              alt="">
+            <img src="../assets/images/shapes/boom-yellow.svg" class="contact-badge__boom contact-badge__shape-hover"
+              alt="">
+            <img src="../assets/images/shapes/banner-yellow.svg" class="contact-badge__banner contact-badge__shape-base"
+              alt="">
+            <img src="../assets/images/shapes/banner-orange.svg"
+              class="contact-badge__banner contact-badge__banner--orange contact-badge__shape-hover" alt="">
+            <img src="../assets/images/shapes/twinkle-star-pale-gold.svg" class="contact-badge__star" alt="">
+            <span class="contact-badge__text">Contact Susan</span>
+          </a>
         </div>
       </div>
       <div class="copyright-bar">
-        <p>&copy; <span id="year"></span> Starkey Pet Sitting.</p>
+        <p>&copy; <span id="year"></span> Barkey Pet Sitting.</p>
       </div>
     </section>
   </main>
