@@ -7,38 +7,14 @@
    width="344.66666"
    height="356"
    viewBox="0 0 344.66666 356"
-   sodipodi:docname="diamond-gold.svg"
-   inkscape:version="1.4.4 (dcaf3e7, 2026-05-05)"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:svg="http://www.w3.org/2000/svg">
   <defs
      id="defs1" />
-  <sodipodi:namedview
-     id="namedview1"
-     pagecolor="#505050"
-     bordercolor="#eeeeee"
-     borderopacity="1"
-     inkscape:showpageshadow="0"
-     inkscape:pageopacity="0"
-     inkscape:pagecheckerboard="0"
-     inkscape:deskcolor="#505050"
-     inkscape:zoom="3.4073034"
-     inkscape:cx="206.32152"
-     inkscape:cy="178"
-     inkscape:window-width="2560"
-     inkscape:window-height="1494"
-     inkscape:window-x="-11"
-     inkscape:window-y="-11"
-     inkscape:window-maximized="1"
-     inkscape:current-layer="g1" />
   <g
-     inkscape:groupmode="layer"
-     inkscape:label="Image"
      id="g1">
     <path
-       style="fill:#c9a227;stroke-width:1.02262;fill-opacity:1"
+       style="fill:#2b2b2b;stroke-width:1.02262;fill-opacity:1"
        d="m 185.50417,324.30645 c -0.21938,-0.51964 -0.94817,-6.94481 -1.61953,-14.27814 -2.09874,-22.92504 -4.77149,-37.76217 -9.92755,-55.11074 -9.13862,-30.74859 -27.15247,-57.80471 -46.49791,-69.83808 -6.84841,-4.2599 -12.06794,-6.44432 -22.55908,-9.4412 -6.741089,-1.92564 -8.740519,-2.77238 -8.924329,-3.77938 -0.20162,-1.1046 0.97384,-1.62147 7.897689,-3.47274 15.40525,-4.11901 22.83866,-8.03544 33.79397,-17.80499 14.05176,-12.53088 25.80055,-31.3798 33.84622,-54.300523 6.63317,-18.896752 9.76353,-34.569402 12.36734,-61.919022 2.00495,-21.05955 2.83745,-21.23632 4.70947,-1 2.35728,25.48208 6.01215,44.49943 11.82802,61.54449 10.42541,30.554725 28.91301,55.617265 49.06181,66.510175 4.69021,2.53564 13.42984,5.65307 21.40624,7.63561 5.597,1.39114 7.37228,2.62042 5.54366,3.83866 -0.51715,0.34452 -3.96113,1.45458 -7.6533,2.46678 -24.03429,6.58903 -38.68186,17.97634 -52.86765,41.10042 -15.85087,25.83829 -23.4213,51.77543 -27.31098,93.57054 -1.19797,12.87248 -2.04239,16.76916 -3.09409,14.27814 z"
        id="path1" />
   </g>

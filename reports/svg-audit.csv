@@ -1,0 +1,18 @@
+file,status,wrapped_raster,path_count,polygon_count,basic_shape_count,estimated_nodes,recommendation
+assets/images/shapes/banner-orange.svg,ok,False,1,0,0,2,Good: vector
+assets/images/shapes/banner-teal.svg,ok,False,1,0,0,2,Good: vector
+assets/images/shapes/banner-yellow.svg,ok,False,1,0,0,2,Good: vector
+assets/images/shapes/boom-orange.svg,ok,False,4,0,0,4,Good: vector
+assets/images/shapes/boom-teal.svg,ok,False,1,0,0,4,Good: vector
+assets/images/shapes/boom-yellow.svg,ok,False,3,0,0,4,Good: vector
+assets/images/shapes/diamond-charcoal.svg,ok,False,1,0,0,3,Good: vector
+assets/images/shapes/diamond-gold.svg,ok,False,1,0,0,3,Good: vector
+assets/images/shapes/diamond-orange.svg,ok,False,1,0,0,3,Good: vector
+assets/images/shapes/diamond-pink.svg,ok,False,1,0,0,3,Good: vector
+assets/images/shapes/diamond-teal.svg,ok,False,1,0,0,3,Good: vector
+assets/images/shapes/starburst-gold.svg,ok,False,1,0,0,17,Good: vector
+assets/images/shapes/starburst-orange.svg,ok,False,1,0,0,17,Good: vector
+assets/images/shapes/starburst-pink.svg,ok,False,1,0,0,17,Good: vector
+assets/images/shapes/starburst-teal.svg,ok,False,1,0,0,17,Good: vector
+assets/images/shapes/twinkle-star-pale-gold.svg,ok,False,1,0,0,3,Good: vector
+assets/images/shapes/twinkle-star-yellow.svg,ok,False,1,0,0,3,Good: vector

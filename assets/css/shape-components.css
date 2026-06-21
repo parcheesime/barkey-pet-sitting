@@ -81,12 +81,12 @@ button.contact-badge {
 .contact-badge__star {
     width: 65px;
     right: 75px;
-    bottom: 76px;
+    bottom: 82px;
 }
 
 .contact-badge__text {
     position: absolute;
-    left: 148px;
+    left: 142px;
     top: 119px;
     transform: translate(-50%, -50%);
     font-family: var(--font-accent);
