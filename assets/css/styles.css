@@ -2032,6 +2032,26 @@ select:focus-visible {
   text-transform: uppercase;
 }
 
+.kicker-with-icon {
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  gap: 0.55rem;
+}
+
+.kicker-with-icon--diamond-gold::before {
+  content: "";
+  flex: 0 0 auto;
+  width: 20px;
+  height: 20px;
+  background: url("../images/shapes/diamond-gold.svg") center / contain no-repeat;
+}
+
+.page-hero .page-kicker,
+.framework-hero .page-kicker {
+  margin-inline: auto;
+}
+
 .page-title,
 .framework-hero h1 {
   max-width: 12ch;
