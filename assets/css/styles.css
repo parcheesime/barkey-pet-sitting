@@ -2039,12 +2039,12 @@ select:focus-visible {
   gap: 0.55rem;
 }
 
-.kicker-with-icon--diamond-gold::before {
+.kicker-with-icon-gold::before {
   content: "";
   flex: 0 0 auto;
   width: 20px;
   height: 20px;
-  background: url("../images/shapes/diamond-gold.svg") center / contain no-repeat;
+  background: url("../images/shapes/ball-spike-star-gold.svg") center / contain no-repeat;
 }
 
 .page-hero .page-kicker,
@@ -2223,6 +2223,19 @@ select:focus-visible {
   width: min(100%, 260px);
   height: auto;
   display: block;
+}
+
+.about-preview-copy {
+  text-align: center;
+}
+
+.about-preview-copy .page-kicker,
+.about-preview-copy .section-actions {
+  margin-inline: auto;
+}
+
+.about-preview-copy .section-actions {
+  justify-content: center;
 }
 
 .framework-footer {
@@ -2768,6 +2781,12 @@ select:focus-visible {
   color: var(--color-charcoal);
   font-size: var(--font-card-body);
   line-height: 1.7;
+}
+
+.faq-editorial-cta {
+  display: flex;
+  justify-content: center;
+  padding-top: var(--space-xl);
 }
 
 @media (max-width: 767px) {
