@@ -349,7 +349,6 @@ select:focus-visible {
   align-items: center;
   justify-content: center;
   text-align: center;
-  text-wrap: pretty;
   white-space: normal;
   padding: 0.95rem 2rem;
   font-size: var(--font-button);
@@ -485,6 +484,45 @@ select:focus-visible {
 .site-nav .nav-cta:hover,
 .site-nav .cta-button:hover {
   opacity: 1;
+}
+
+.mobile-menu-cat {
+  display: none;
+  pointer-events: none;
+  user-select: none;
+}
+
+.text-pretty {
+  text-wrap: pretty;
+}
+
+:where(
+  .page-intro,
+  .framework-hero__tagline,
+  .section-heading p,
+  .preview-grid p,
+  .home-step p,
+  .step-card p,
+  .framework-card p,
+  .faq-card p,
+  .framework-footer__panel p,
+  .service-card p,
+  .bio-copy p,
+  .value-item p,
+  .testimonial-card blockquote,
+  .contact-intro,
+  .contact-info-card p,
+  .contact-form-card p,
+  .form-note,
+  .downloads-intro,
+  .download-card p,
+  .faq-answer p,
+  .resources-hero p,
+  .about-story-section p,
+  .services-menu-item p,
+  .faq-editorial-item p
+) {
+  text-wrap: pretty;
 }
 
 .nav-toggle {
@@ -1667,6 +1705,14 @@ select:focus-visible {
     padding: 0.5rem 0;
   }
 
+  .mobile-menu-cat {
+    display: block;
+    align-self: center;
+    width: min(120px, 42vw);
+    height: auto;
+    margin-top: var(--space-sm);
+  }
+
   .site-nav .nav-cta,
   .site-nav .cta-button {
     width: 100%;
@@ -2500,62 +2546,75 @@ select:focus-visible {
   border-top: 1px solid var(--border);
 }
 
-.about-philosophy-grid {
+.about-story {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: var(--space-3xl);
+  grid-template-columns: minmax(280px, 0.86fr) minmax(0, 1.14fr);
+  gap: clamp(var(--space-xl), 5vw, var(--space-3xl));
+  align-items: start;
 }
 
-.about-philosophy-item {
+.about-story-photo {
+  margin: 0;
+}
+
+.about-story-photo .placeholder-frame {
+  min-height: 420px;
+}
+
+.about-story-copy {
+  display: grid;
+  gap: var(--space-xl);
+}
+
+.about-story-section {
   padding-top: var(--space-lg);
   border-top: 4px solid var(--color-atomic-teal);
 }
 
-.about-philosophy-item:nth-child(2) {
+.about-story-section:nth-child(2) {
   border-top-color: var(--color-burnt-orange);
 }
 
-.about-philosophy-item h2 {
+.about-story-section h2 {
   margin-bottom: var(--space-md);
   color: var(--color-atomic-teal);
   font-size: 2.6rem;
   line-height: 1.08;
 }
 
-.about-philosophy-item p {
-  max-width: 34rem;
+.about-story-section p {
+  max-width: 39rem;
   color: var(--ink-light);
   font-size: var(--font-card-body);
   line-height: 1.7;
 }
 
-.about-photo-feature {
-  width: min(100%, 560px);
-  margin: var(--space-3xl) auto 0;
-}
-
-.about-photo-feature .placeholder-frame {
-  min-height: 340px;
+.about-story-section p + p {
+  margin-top: var(--space-md);
 }
 
 .about-cta {
   display: flex;
   justify-content: center;
-  margin-top: var(--space-xl);
+  margin-top: 40px;
 }
 
 @media (max-width: 767px) {
-  .about-philosophy-grid {
+  .about-story {
     grid-template-columns: 1fr;
     gap: var(--space-xl);
   }
 
-  .about-philosophy-item h2 {
+  .about-story-photo .placeholder-frame {
+    min-height: 320px;
+  }
+
+  .about-story-section h2 {
     font-size: 2.1rem;
   }
 
-  .about-photo-feature {
-    margin-top: var(--space-2xl);
+  .about-story-section p {
+    max-width: none;
   }
 }
 
@@ -2642,10 +2701,6 @@ select:focus-visible {
   margin-inline: auto;
   padding: var(--space-xl) 0 var(--space-3xl);
   border-top: 1px solid var(--border);
-}
-
-.contact-page-intro {
-  text-wrap: pretty;
 }
 
 .contact-editorial .contact-form-card {
