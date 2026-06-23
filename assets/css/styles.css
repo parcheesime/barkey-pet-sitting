@@ -408,49 +408,18 @@ select:focus-visible {
 }
 
 .logo {
-  display: flex;
+  display: inline-flex;
   align-items: center;
-  gap: 1rem;
+  flex-shrink: 0;
   color: var(--paper);
   text-decoration: none;
 }
 
-.logo-badge {
-  width: 4.25rem;
-  height: 4.25rem;
-  background-color: var(--paper);
-  color: var(--mustard);
-  border-radius: 50%;
-  display: grid;
-  place-items: center;
-  padding: 0.5rem;
-  box-shadow: var(--logo-inset-shadow);
-}
-
-.logo-badge svg {
-  width: 100%;
-  height: 100%;
-}
-
-.logo-text {
-  display: flex;
-  flex-direction: column;
-}
-
-.brand-name {
-  font-family: var(--font-display);
-  font-size: 3.4375rem;
-  font-weight: 400;
-  letter-spacing: 0;
-  line-height: 1.1;
-}
-
-.brand-sub {
-  font-size: 1.025rem;
-  font-weight: 700;
-  letter-spacing: 0.2em;
-  margin-top: 0.15rem;
-  text-transform: uppercase;
+.logo-image {
+  display: block;
+  width: clamp(165px, 21vw, 258px);
+  height: auto;
+  max-height: 102px;
 }
 
 .site-nav {
@@ -1665,27 +1634,13 @@ select:focus-visible {
     box-shadow: none;
   }
 
-  .logo,
-  .brand-name,
-  .brand-sub {
+  .logo {
     color: var(--color-charcoal);
   }
 
-  .logo {
-    gap: 0.75rem;
-  }
-
-  .logo-badge {
-    width: 2.75rem;
-    height: 2.75rem;
-  }
-
-  .brand-name {
-    font-size: 1.95rem;
-  }
-
-  .brand-sub {
-    font-size: 0.65rem;
+  .logo-image {
+    width: clamp(145px, 44vw, 205px);
+    max-height: 78px;
   }
 
   .nav-toggle {
@@ -1839,15 +1794,6 @@ select:focus-visible {
     padding-inline: 16px;
   }
 
-  .logo-badge {
-    width: 2.6rem;
-    height: 2.6rem;
-  }
-
-  .brand-name {
-    font-size: 1.62rem;
-  }
-
   .hero {
     padding: 3.75rem 0 4.25rem;
   }
@@ -1987,18 +1933,9 @@ select:focus-visible {
   text-decoration: none;
 }
 
-.layout-rail .logo-badge {
-  display: none;
-}
-
-.layout-rail .brand-name {
-  font-size: 2.4rem;
-  color: var(--color-atomic-teal);
-}
-
-.layout-rail .brand-sub {
-  color: var(--color-charcoal);
-  opacity: 0.72;
+.layout-rail .logo-image {
+  width: clamp(168px, 14vw, 210px);
+  max-height: 94px;
 }
 
 .layout-rail .site-nav {
@@ -2372,17 +2309,9 @@ select:focus-visible {
     color: var(--color-charcoal);
   }
 
-  .layout-rail .brand-name {
-    color: var(--teal-text);
-  }
-
-  .layout-rail .brand-sub {
-    color: var(--color-charcoal);
-    opacity: 0.72;
-  }
-
-  .layout-rail .brand-name {
-    font-size: 1.9rem;
+  .layout-rail .logo-image {
+    width: clamp(145px, 44vw, 205px);
+    max-height: 78px;
   }
 
   .layout-rail .nav-toggle {
