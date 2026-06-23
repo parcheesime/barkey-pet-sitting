@@ -93,6 +93,12 @@
   --color-soft-pink: #D8B9C7;
   --color-olive: #AEB53B;
   --color-white: #FFFFFF;
+  --teal-text: #1F6F7E;
+  --orange-text: #B04A1D;
+  --gold-text: #8A5F00;
+  --teal-decorative: #2D8C9F;
+  --orange-decorative: #E56A2E;
+  --gold-decorative: #E2B544;
 
   /* Current-site semantic aliases */
   --cream: var(--color-cream);
@@ -104,7 +110,6 @@
   --mustard-hover: var(--color-burnt-orange);
   --brown: var(--color-burnt-orange);
   --ink: var(--color-charcoal);
-  --ink-light: color-mix(in srgb, var(--color-charcoal) 72%, var(--color-white));
   --border: color-mix(in srgb, var(--color-charcoal) 18%, var(--color-cream));
   --shadow: rgba(43, 43, 43, 0.1);
   --shadow-dark: rgba(43, 43, 43, 0.22);
@@ -116,8 +121,8 @@
   --blue: var(--color-soft-pink);
   --blue-light: color-mix(in srgb, var(--color-soft-pink) 35%, var(--color-white));
   --badge-bg: var(--color-burnt-orange);
-  --link-color: var(--color-atomic-teal);
-  --link-hover: var(--color-burnt-orange);
+  --link-color: var(--teal-text);
+  --link-hover: var(--orange-text);
   --focus-color: var(--color-burnt-orange);
   --light-border: rgba(244, 239, 227, 0.18);
   --light-border-strong: rgba(255, 255, 255, 0.36);
@@ -166,7 +171,7 @@ h2,
 h3,
 h4 {
   font-family: var(--font-heading);
-  color: var(--olive);
+  color: var(--teal-text);
   line-height: 1.12;
   letter-spacing: 0;
 }
@@ -306,15 +311,15 @@ select:focus-visible {
 }
 
 .text-atomic-teal {
-  color: var(--color-atomic-teal);
+  color: var(--teal-text);
 }
 
 .text-burnt-orange {
-  color: var(--color-burnt-orange);
+  color: var(--orange-text);
 }
 
 .text-mustard-gold {
-  color: var(--color-mustard-gold);
+  color: var(--gold-text);
 }
 
 .text-soft-pink {
@@ -322,21 +327,21 @@ select:focus-visible {
 }
 
 .text-olive {
-  color: var(--color-olive);
+  color: var(--teal-text);
 }
 
 /* Custom Text Accents */
 .cursive-accent {
   font-family: var(--font-accent);
   font-size: 1.15em;
-  color: var(--brown);
+  color: var(--orange-text);
   display: inline-block;
   transform: rotate(-1deg);
   font-weight: 700;
 }
 
 .paw-accent {
-  color: var(--mustard);
+  color: var(--gold-text);
   display: inline-block;
   font-size: 0.95em;
   transform: translateY(-0.05em) rotate(8deg);
@@ -444,7 +449,6 @@ select:focus-visible {
   font-size: 1.025rem;
   font-weight: 700;
   letter-spacing: 0.2em;
-  opacity: 0.9;
   margin-top: 0.15rem;
   text-transform: uppercase;
 }
@@ -496,8 +500,7 @@ select:focus-visible {
   text-wrap: pretty;
 }
 
-:where(
-  .page-intro,
+:where(.page-intro,
   .framework-hero__tagline,
   .section-heading p,
   .preview-grid p,
@@ -520,8 +523,7 @@ select:focus-visible {
   .resources-hero p,
   .about-story-section p,
   .services-menu-item p,
-  .faq-editorial-item p
-) {
+  .faq-editorial-item p) {
   text-wrap: pretty;
 }
 
@@ -1115,14 +1117,14 @@ select:focus-visible {
   font-size: var(--font-card-body);
   line-height: 1.45;
   font-weight: 700;
-  color: var(--brown);
+  color: var(--orange-text);
   font-style: normal;
 }
 
 /* Footer Banner Call To Action */
 .footer-banner {
-  background-color: var(--brown);
-  color: var(--paper);
+  background-color: var(--orange-text);
+  color: #FFFAF2;
   padding: 3.5rem 0 0;
   position: relative;
   border-top: 1px solid var(--light-border);
@@ -1161,7 +1163,7 @@ select:focus-visible {
 }
 
 .footer-banner-copy h2 {
-  color: var(--paper);
+  color: inherit;
   font-size: var(--font-section-title);
   margin-bottom: 0;
 }
@@ -1169,12 +1171,12 @@ select:focus-visible {
 .cursive-sub {
   font-family: var(--font-accent);
   font-size: 2.2rem;
-  color: var(--mustard);
+  color: inherit;
   font-weight: 600;
 }
 
 .heart-text {
-  color: var(--paper);
+  color: inherit;
   font-size: var(--font-card-body);
   line-height: 1.45;
 }
@@ -1211,7 +1213,7 @@ select:focus-visible {
   font-size: var(--font-footer);
   font-weight: 800;
   letter-spacing: 0.1em;
-  color: var(--brown);
+  color: var(--orange-text);
   text-transform: uppercase;
   margin-bottom: 1.5rem;
 }
@@ -1233,7 +1235,7 @@ select:focus-visible {
 
 .direct-contact-box h2 {
   font-size: var(--font-feature-title);
-  color: var(--olive);
+  color: var(--teal-text);
   margin-bottom: 1.25rem;
 }
 
@@ -1260,7 +1262,7 @@ select:focus-visible {
 }
 
 .direct-contact-list a:hover {
-  color: var(--brown);
+  color: var(--orange-text);
 }
 
 /* Retro Contact Form Styling */
@@ -1391,13 +1393,13 @@ select:focus-visible {
 }
 
 .section-title-brown {
-  color: var(--brown);
+  color: var(--orange-text);
   font-size: var(--font-section-title);
   margin-bottom: 1rem;
 }
 
 .section-title-olive {
-  color: var(--olive);
+  color: var(--teal-text);
   font-size: var(--font-section-title);
   margin-bottom: 2.5rem;
   text-align: center;
@@ -1503,7 +1505,7 @@ select:focus-visible {
   font-family: var(--font-heading);
   font-size: calc(var(--font-card-title) * 0.72);
   font-weight: 600;
-  color: var(--olive);
+  color: var(--teal-text);
   cursor: pointer;
   list-style: none;
   display: flex;
@@ -1522,7 +1524,7 @@ select:focus-visible {
   font-family: monospace;
   font-size: 1.5rem;
   font-weight: 400;
-  color: var(--brown);
+  color: var(--orange-text);
   transition: transform 0.2s ease;
 }
 
@@ -2010,7 +2012,7 @@ select:focus-visible {
 
 .layout-rail .site-nav a:hover,
 .layout-rail .site-nav a.active {
-  color: var(--color-atomic-teal);
+  color: var(--teal-text);
   border-bottom-color: var(--color-atomic-teal);
   opacity: 1;
 }
@@ -2070,7 +2072,7 @@ select:focus-visible {
 
 .page-kicker {
   margin-bottom: var(--space-lg);
-  color: var(--color-burnt-orange);
+  color: var(--orange-text);
   font-family: var(--font-heading);
   font-size: var(--font-small);
   font-weight: 700;
@@ -2229,7 +2231,7 @@ select:focus-visible {
   content: counter(step, decimal-leading-zero);
   display: block;
   margin-bottom: var(--space-md);
-  color: var(--color-burnt-orange);
+  color: var(--orange-text);
   font-family: var(--font-heading);
   font-size: 0.95rem;
   font-weight: 700;
@@ -2240,7 +2242,7 @@ select:focus-visible {
 .faq-card h2,
 .faq-card h3 {
   margin-bottom: var(--space-sm);
-  color: var(--color-atomic-teal);
+  color: var(--teal-text);
 }
 
 .step-card p,
@@ -2292,12 +2294,13 @@ select:focus-visible {
 .framework-footer__panel {
   padding: var(--space-2xl);
   border-radius: 8px;
-  background: var(--color-atomic-teal);
-  color: var(--paper);
+  background: var(--teal-text);
+  color: #FFFAF2;
 }
 
 .framework-footer__panel h2,
-.framework-footer__panel p {
+.framework-footer__panel p,
+.framework-footer__panel a {
   color: inherit;
 }
 
@@ -2480,13 +2483,13 @@ select:focus-visible {
 
 .home-step:nth-child(2),
 .home-step:nth-child(3) {
-  border-top-color: var(--color-burnt-orange);
+  border-top-color: var(--orange-text);
 }
 
 .home-step__number {
   display: inline-block;
   margin-bottom: var(--space-md);
-  color: var(--color-burnt-orange);
+  color: var(--orange-text);
   font-family: var(--font-heading);
   font-size: 1rem;
   font-weight: 800;
@@ -2496,7 +2499,7 @@ select:focus-visible {
 .home-step h3 {
   max-width: 12ch;
   margin-bottom: var(--space-sm);
-  color: var(--color-atomic-teal);
+  color: var(--teal-text);
   font-size: 2.3rem;
   line-height: 1.05;
 }
@@ -2577,7 +2580,7 @@ select:focus-visible {
 
 .about-story-section h2 {
   margin-bottom: var(--space-md);
-  color: var(--color-atomic-teal);
+  color: var(--teal-text);
   font-size: 2.6rem;
   line-height: 1.08;
 }
@@ -2589,7 +2592,7 @@ select:focus-visible {
   line-height: 1.7;
 }
 
-.about-story-section p + p {
+.about-story-section p+p {
   margin-top: var(--space-md);
 }
 
@@ -2655,7 +2658,7 @@ select:focus-visible {
 .services-menu-item h3 {
   max-width: 12ch;
   margin-bottom: var(--space-sm);
-  color: var(--color-atomic-teal);
+  color: var(--teal-text);
   font-size: 2.25rem;
   line-height: 1.08;
 }
@@ -2728,7 +2731,7 @@ select:focus-visible {
 }
 
 .contact-editorial .required {
-  color: var(--color-burnt-orange);
+  color: var(--orange-text);
 }
 
 .contact-editorial .retro-contact-form input[type="text"],
@@ -2762,7 +2765,7 @@ select:focus-visible {
 }
 
 .contact-editorial .select-wrapper::after {
-  color: var(--color-burnt-orange);
+  color: var(--orange-text);
 }
 
 .contact-editorial .submit-btn {
@@ -2800,7 +2803,7 @@ select:focus-visible {
   gap: var(--space-lg);
   align-items: center;
   padding: var(--space-xl) 0;
-  color: var(--color-atomic-teal);
+  color: var(--teal-text);
   font-family: var(--font-heading);
   font-size: 2rem;
   font-weight: 700;
@@ -2815,7 +2818,7 @@ select:focus-visible {
 
 .faq-editorial-item summary::after {
   content: "+";
-  color: var(--color-burnt-orange);
+  color: var(--orange-text);
   font-family: var(--font-heading);
   font-size: 2rem;
   font-weight: 700;
