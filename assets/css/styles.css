@@ -1660,6 +1660,15 @@ select:focus-visible {
   .site-header {
     min-height: auto;
     padding: 1rem 20px;
+    background: var(--color-cream);
+    border-bottom: 0;
+    box-shadow: none;
+  }
+
+  .logo,
+  .brand-name,
+  .brand-sub {
+    color: var(--color-charcoal);
   }
 
   .logo {
@@ -1683,16 +1692,20 @@ select:focus-visible {
     display: block;
   }
 
+  .nav-toggle span {
+    background-color: var(--color-charcoal);
+  }
+
   .site-nav {
     position: absolute;
     top: 100%;
     left: 0;
     right: 0;
-    background-color: var(--olive);
+    background-color: var(--color-cream);
     flex-direction: column;
     padding: 1.5rem;
     gap: 1.25rem;
-    border-top: 1px solid var(--header-border);
+    border-top: 1px solid var(--border);
     box-shadow: var(--mobile-nav-shadow);
     display: none;
   }
@@ -1703,6 +1716,7 @@ select:focus-visible {
 
   .site-nav a {
     width: 100%;
+    color: var(--color-charcoal);
     text-align: center;
     padding: 0.5rem 0;
   }
@@ -2344,19 +2358,27 @@ select:focus-visible {
     position: sticky;
     width: auto;
     min-height: auto;
-    padding: var(--space-md) var(--page-gutter);
+    padding: var(--space-sm) var(--page-gutter);
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    background: var(--color-atomic-teal);
+    background: var(--color-cream);
     border-right: 0;
-    border-bottom: 1px solid var(--header-border);
+    border-bottom: 0;
+    box-shadow: none;
   }
 
-  .layout-rail .logo,
-  .layout-rail .brand-name,
+  .layout-rail .logo {
+    color: var(--color-charcoal);
+  }
+
+  .layout-rail .brand-name {
+    color: var(--teal-text);
+  }
+
   .layout-rail .brand-sub {
-    color: var(--paper);
+    color: var(--color-charcoal);
+    opacity: 0.72;
   }
 
   .layout-rail .brand-name {
@@ -2365,6 +2387,10 @@ select:focus-visible {
 
   .layout-rail .nav-toggle {
     display: block;
+  }
+
+  .layout-rail .nav-toggle span {
+    background-color: var(--color-charcoal);
   }
 
   .layout-rail .site-nav {
@@ -2391,7 +2417,7 @@ select:focus-visible {
 
   .layout-main {
     margin-left: 0;
-    padding: var(--space-xl) var(--page-gutter) var(--space-3xl);
+    padding: var(--space-sm) var(--page-gutter) var(--space-3xl);
   }
 
   .framework-hero,
@@ -2400,6 +2426,7 @@ select:focus-visible {
   }
 
   .framework-hero {
+    padding-top: var(--space-sm);
     justify-items: center;
   }
 
@@ -2420,7 +2447,7 @@ select:focus-visible {
 
 @media (max-width: 767px) {
   .layout-main {
-    padding-top: var(--space-lg);
+    padding-top: var(--space-xs);
   }
 
   .page-title,
@@ -2433,7 +2460,7 @@ select:focus-visible {
     margin-inline: calc(var(--page-gutter) * -1);
     padding-inline: var(--page-gutter);
     grid-template-columns: 1fr;
-    padding-top: var(--space-md);
+    padding-top: var(--space-xs);
     justify-items: center;
     text-align: center;
   }
@@ -2599,7 +2626,7 @@ select:focus-visible {
 .about-cta {
   display: flex;
   justify-content: center;
-  margin-top: 40px;
+  margin-top: 50px;
 }
 
 @media (max-width: 767px) {
