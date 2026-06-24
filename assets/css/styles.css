@@ -691,6 +691,7 @@ select:focus-visible {
 }
 
 .agreement-section {
+  scroll-margin-top: var(--space-md);
   width: min(100%, 1060px);
   margin-inline: auto;
   padding: var(--space-xl) 0 var(--space-3xl);
