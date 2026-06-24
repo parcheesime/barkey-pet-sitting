@@ -259,6 +259,20 @@ select:focus-visible {
   }
 }
 
+@media (max-width: 768px) {
+  .reveal,
+  .fade-in,
+  .scroll-fade,
+  .reveal-enabled .reveal,
+  .reveal-enabled .fade-in,
+  .reveal-enabled .scroll-fade {
+    opacity: 1;
+    transform: none;
+    visibility: visible;
+    pointer-events: auto;
+  }
+}
+
 /* Typography Utilities */
 .font-display {
   font-family: var(--font-display);
