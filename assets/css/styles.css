@@ -2244,20 +2244,44 @@ select:focus-visible {
 }
 
 .nav-illustration {
-  width: min(100%, 230px);
-  margin: auto auto 0;
+  width: calc(100% + 30px);
+  margin: auto -8px 0 -28px;
   padding-top: var(--space-2xl);
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
 }
 
 .nav-illustration img {
-  width: 100%;
   height: auto;
   display: block;
 }
 
+.nav-illustration__cat {
+  width: min(74%, 172px);
+  flex: 0 0 auto;
+}
+
+.nav-illustration__turtle {
+  width: min(44%, 104px);
+  flex: 0 0 auto;
+  margin-left: -0.9rem;
+  transform: translateY(-0.1rem);
+}
+
 @media (min-width: 1024px) and (max-width: 1200px) {
   .nav-illustration {
-    width: 190px;
+    width: calc(100% + 20px);
+    margin-left: -20px;
+    margin-right: 0;
+  }
+
+  .nav-illustration__cat {
+    width: min(72%, 150px);
+  }
+
+  .nav-illustration__turtle {
+    width: min(42%, 88px);
   }
 }
 
