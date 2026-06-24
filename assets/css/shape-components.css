@@ -1,29 +1,13 @@
 .contact-badge {
-    position: relative;
     display: block;
-    width: 270px;
-    height: 181px;
+    width: min(270px, 100%);
+    aspect-ratio: 2648 / 1579;
     margin-inline: auto;
-    color: #5B3924;
     text-decoration: none;
-}
-
-button.contact-badge {
-    padding: 0;
-    border: 0;
-    background: transparent;
-    cursor: pointer;
-    font: inherit;
-}
-
-.contact-badge.submit-btn {
-    width: 270px;
-    min-width: 0;
 }
 
 .contact-badge:hover,
 .contact-badge:focus-visible {
-    color: #5B3924;
     text-decoration: none;
 }
 
@@ -33,67 +17,11 @@ button.contact-badge {
     border-radius: 8px;
 }
 
-.contact-badge__boom,
-.contact-badge__banner,
-.contact-badge__star {
-    position: absolute;
+.contact-badge__image {
     display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
     pointer-events: none;
     user-select: none;
-}
-
-.contact-badge__shape-base,
-.contact-badge__shape-hover {
-    transition: opacity 180ms ease;
-}
-
-.contact-badge__shape-hover {
-    opacity: 0;
-}
-
-.contact-badge:hover .contact-badge__shape-base,
-.contact-badge:focus-visible .contact-badge__shape-base {
-    opacity: 0;
-}
-
-.contact-badge:hover .contact-badge__shape-hover,
-.contact-badge:focus-visible .contact-badge__shape-hover {
-    opacity: 1;
-}
-
-.contact-badge__boom {
-    width: 188px;
-    left: 12px;
-    bottom: 12px;
-}
-
-.contact-badge__banner {
-    width: 259px;
-    left: 6px;
-    bottom: 0;
-}
-
-.contact-badge__banner--orange {
-    width: 267px;
-    left: 2px;
-}
-
-.contact-badge__star {
-    width: 65px;
-    right: 75px;
-    bottom: 82px;
-}
-
-.contact-badge__text {
-    position: absolute;
-    left: 142px;
-    top: 119px;
-    transform: translate(-50%, -50%);
-    font-family: var(--font-accent);
-    font-size: 1rem;
-    font-weight: 700;
-    letter-spacing: 0.01em;
-    text-transform: uppercase;
-    color: #2B2B2B;
-    white-space: nowrap;
 }
