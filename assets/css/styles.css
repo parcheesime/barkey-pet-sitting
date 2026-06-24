@@ -5,6 +5,8 @@
 
 /* CSS Variables */
 :root {
+  color-scheme: only light;
+
   /* Theme: Retro Postcard */
   --cream: #FAF6EE;
   --paper: #FFFAF2;
@@ -146,8 +148,11 @@
 }
 
 html {
+  color-scheme: only light;
   scroll-behavior: smooth;
   overflow-x: hidden;
+  color: var(--ink);
+  background-color: var(--cream);
 }
 
 body {
@@ -157,6 +162,20 @@ body {
   line-height: 1.6;
   font-size: var(--font-body-size);
   overflow-x: hidden;
+}
+
+button,
+input,
+textarea,
+select {
+  color-scheme: light;
+  color: var(--ink);
+  background-color: var(--paper);
+  border-color: var(--border);
+}
+
+button {
+  font: inherit;
 }
 
 p {
@@ -213,6 +232,31 @@ textarea:focus-visible,
 select:focus-visible {
   outline: 3px solid var(--focus-color);
   outline-offset: 4px;
+}
+
+.reveal {
+  opacity: 1;
+  transform: none;
+}
+
+.reveal-enabled .reveal {
+  opacity: 0;
+  transform: translateY(16px);
+  transition: opacity 650ms ease, transform 650ms ease;
+}
+
+.reveal-enabled .reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal-enabled .reveal,
+  .reveal-enabled .reveal.is-visible {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
 }
 
 /* Typography Utilities */
@@ -480,6 +524,7 @@ select:focus-visible {
   display: none;
   background: transparent;
   border: 0;
+  color: var(--ink);
   cursor: pointer;
 }
 
@@ -571,6 +616,12 @@ select:focus-visible {
   color: var(--ink);
   outline: none;
   transition: all 0.2s ease;
+}
+
+.retro-contact-form input::placeholder,
+.retro-contact-form textarea::placeholder {
+  color: var(--ink-light);
+  opacity: 0.78;
 }
 
 .retro-contact-form input:focus,
@@ -825,6 +876,12 @@ select:focus-visible {
   font-size: 1rem;
 }
 
+.agreement-form input::placeholder,
+.agreement-form textarea::placeholder {
+  color: var(--ink-light);
+  opacity: 0.78;
+}
+
 .agreement-form textarea {
   min-height: 8rem;
   resize: vertical;
@@ -877,6 +934,9 @@ select:focus-visible {
   width: 1.15rem;
   height: 1.15rem;
   margin-top: 0.2rem;
+  border-color: color-mix(in srgb, var(--color-charcoal) 34%, var(--color-cream));
+  background-color: var(--color-white);
+  color: var(--color-charcoal);
   accent-color: var(--color-burnt-orange);
 }
 
@@ -957,6 +1017,9 @@ select:focus-visible {
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
+  border: 1.5px solid transparent;
+  background-color: transparent;
+  color: var(--color-charcoal);
   cursor: pointer;
   transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
 }

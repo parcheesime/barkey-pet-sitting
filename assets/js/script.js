@@ -39,6 +39,33 @@ contactBadges.forEach((badge) => {
   badge.addEventListener('blur', updateImage);
 });
 
+const revealItems = document.querySelectorAll('.reveal');
+const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+if (revealItems.length && prefersReducedMotion) {
+  revealItems.forEach((item) => item.classList.add('is-visible'));
+} else if (revealItems.length && 'IntersectionObserver' in window) {
+  document.documentElement.classList.add('reveal-enabled');
+
+  const revealObserver = new IntersectionObserver((entries, observer) => {
+    entries.forEach((entry) => {
+      if (!entry.isIntersecting) {
+        return;
+      }
+
+      entry.target.classList.add('is-visible');
+      observer.unobserve(entry.target);
+    });
+  }, {
+    rootMargin: '0px 0px -10% 0px',
+    threshold: 0.12,
+  });
+
+  revealItems.forEach((item) => revealObserver.observe(item));
+} else {
+  revealItems.forEach((item) => item.classList.add('is-visible'));
+}
+
 const year = document.querySelector('#year');
 
 if (year) {
