@@ -1,6 +1,6 @@
 # Barkey Pet Sitting
 
-A custom small business website for Barkey Pet Sitting, featuring a warm mid-century inspired design, responsive layout, pet care service information, FAQ content, and a contact form.
+Built with semantic HTML, modern CSS, vanilla JavaScript, responsive design techniques, accessibility best practices, GitHub Pages deployment, and Formspree integration.
 
 ## Pages
 
