@@ -2766,7 +2766,7 @@ select:focus-visible {
 
 /* === About Page Editorial Layout === */
 .about-editorial {
-  width: min(100%, 960px);
+  width: min(100%, 1040px);
   margin-inline: auto;
   padding: var(--space-xl) 0 var(--space-3xl);
   border-top: 1px solid var(--border);
@@ -2774,7 +2774,7 @@ select:focus-visible {
 
 .about-story {
   display: grid;
-  grid-template-columns: minmax(280px, 0.86fr) minmax(0, 1.14fr);
+  grid-template-columns: minmax(260px, 0.38fr) minmax(0, 0.62fr);
   gap: clamp(var(--space-xl), 5vw, var(--space-3xl));
   align-items: start;
 }
@@ -2784,7 +2784,22 @@ select:focus-visible {
 }
 
 .about-story-photo .placeholder-frame {
-  min-height: 420px;
+  width: 100%;
+  min-height: 0;
+  max-height: 560px;
+  aspect-ratio: 4 / 5;
+  overflow: hidden;
+  border-style: solid;
+  border-color: color-mix(in srgb, var(--color-atomic-teal) 52%, var(--color-cream));
+  background: color-mix(in srgb, var(--color-soft-pink) 16%, var(--color-white));
+}
+
+.about-story-photo .hero-photo {
+  width: 100%;
+  height: 100%;
+  min-height: 0;
+  object-fit: cover;
+  object-position: center top;
 }
 
 .about-story-copy {
@@ -2825,14 +2840,23 @@ select:focus-visible {
   margin-top: 50px;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 1023px) {
   .about-story {
     grid-template-columns: 1fr;
     gap: var(--space-xl);
   }
 
   .about-story-photo .placeholder-frame {
-    min-height: 320px;
+    width: min(100%, 440px);
+    margin-inline: auto;
+    max-height: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .about-story-photo .placeholder-frame {
+    width: 100%;
+    aspect-ratio: 4 / 5;
   }
 
   .about-story-section h2 {
