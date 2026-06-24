@@ -3015,6 +3015,39 @@ select:focus-visible {
   color: var(--orange-text);
 }
 
+.contact-editorial .form-submit-button {
+  justify-self: start;
+  width: fit-content;
+  min-height: 52px;
+  padding: 0.9rem 1.8rem;
+  border: 1.5px solid var(--color-burnt-orange);
+  border-radius: 9999px;
+  background: var(--color-burnt-orange);
+  color: var(--color-white);
+  font-family: var(--font-heading);
+  font-size: 1rem;
+  font-weight: 800;
+  letter-spacing: 0.07em;
+  line-height: 1.15;
+  text-transform: uppercase;
+  cursor: pointer;
+  box-shadow: 0 6px 14px rgba(216, 106, 46, 0.22);
+  transition: background-color 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.contact-editorial .form-submit-button:hover,
+.contact-editorial .form-submit-button:focus-visible {
+  border-color: color-mix(in srgb, var(--color-burnt-orange) 82%, var(--color-charcoal));
+  background: color-mix(in srgb, var(--color-burnt-orange) 82%, var(--color-charcoal));
+  box-shadow: 0 10px 20px rgba(43, 43, 43, 0.18);
+  outline: none;
+  transform: translateY(-2px);
+}
+
+.contact-editorial .form-submit-button:active {
+  transform: translateY(0);
+}
+
 .contact-editorial .submit-btn {
   width: auto;
   min-width: 220px;
@@ -3027,7 +3060,8 @@ select:focus-visible {
 }
 
 @media (max-width: 767px) {
-  .contact-editorial .submit-btn {
+  .contact-editorial .submit-btn,
+  .contact-editorial .form-submit-button {
     width: 100%;
   }
 }
