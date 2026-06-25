@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="color-scheme" content="light">
+  <meta name="description" content="Venmo payment information for confirmed Barkey Pet Sitting bookings.">
+  <title>Payment - Barkey Pet Sitting</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fontdiner+Swanky&family=Josefin+Sans:wght@400;500;600;700&family=Nunito:wght@400;600;700;800&family=Pacifico&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/styles.css?v=3">
+  <link rel="stylesheet" href="../assets/css/shape-components.css">
+  <script src="../assets/js/script.js" defer></script>
+</head>
+
+<body class="layout-shell">
+  <header class="site-header layout-rail">
+    <a class="logo" href="../index.html" aria-label="Barkey Pet Sitting home">
+      <img class="logo-image" src="../assets/images/branding/logo-dog.webp" width="649" height="346" alt="Barkey Pet Sitting">
+    </a>
+
+    <button class="nav-toggle" type="button" aria-label="Open navigation" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <nav class="site-nav" aria-label="Main navigation">
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="faq.html">FAQ</a>
+      <!-- <a href="payment.html" class="active">Payment</a> -->
+      <a href="contact.html">Contact</a>
+      <img class="mobile-menu-cat" src="../assets/images/cat-black-laying.svg" width="430" height="287" alt="">
+    </nav>
+
+    <figure class="nav-illustration">
+      <img class="nav-illustration__cat" src="../assets/images/cat-black-sitting.webp" width="601" height="1123"
+        alt="Decorative black cat illustration">
+      <img class="nav-illustration__turtle" src="../assets/images/turtle.svg" width="954" height="616" alt="Decorative turtle illustration">
+    </figure>
+  </header>
+
+  <main class="layout-main">
+    <section class="page-hero payment-hero" aria-labelledby="payment-page-title">
+      <p class="page-kicker kicker-with-icon kicker-with-icon-gold">For confirmed bookings only.</p>
+      <h1 id="payment-page-title" class="page-title">Payment</h1>
+      <p class="page-intro">
+        Thank you! If Susan has confirmed your booking, you can send payment using Venmo.
+      </p>
+    </section>
+
+    <section class="payment-section" aria-labelledby="payment-action-title">
+      <div class="thank-you-panel payment-panel">
+        <div class="thank-you-copy">
+          <p class="eyebrow-accent">Venmo payment</p>
+          <h2 id="payment-action-title">Send payment</h2>
+          <p class="payment-note">
+            Thank you! If Susan has confirmed your booking, you can send payment using Venmo.
+          </p>
+          <p class="payment-helper">
+            Please include your pet's name and service dates in the payment note.
+          </p>
+          <p class="venmo-username">
+            <!-- TODO: Replace this placeholder Venmo username with Susan's actual Venmo username. -->
+            @yourusername
+          </p>
+          <div class="thank-you-actions">
+            <!-- TODO: Replace this placeholder Venmo link with Susan's actual Venmo profile URL. -->
+            <a class="agreement-button agreement-button--primary" href="https://venmo.com/u/Susan-Starkey-2" target="_blank"
+              rel="noopener noreferrer">Pay Susan on Venmo</a>
+            <a class="agreement-button agreement-button--secondary" href="contact.html">Back to Contact</a>
+          </div>
+        </div>
+
+        <figure class="venmo-placeholder" aria-labelledby="payment-qr-title">
+          <p id="payment-qr-title" class="venmo-placeholder__label">Venmo QR code placeholder</p>
+          <!-- TODO: Replace this placeholder image with Susan's actual Venmo QR code after confirming the account. -->
+          <img src="../assets/images/payment/venmo-qr.webp" width="360" height="360"
+            alt="Venmo QR code placeholder">
+          <figcaption>Scan to pay with Venmo</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="framework-footer">
+      <div class="copyright-bar">
+        <p>&copy; <span id="year"></span> Barkey Pet Sitting.</p>
+      </div>
+    </section>
+  </main>
+</body>
+
+</html>
