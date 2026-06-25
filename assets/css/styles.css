@@ -1830,9 +1830,9 @@ select:focus-visible {
     width: auto;
     min-height: auto;
     padding: var(--space-sm) var(--page-gutter);
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
     align-items: center;
-    justify-content: space-between;
     background: var(--color-cream);
     border-right: 0;
     border-bottom: 0;
@@ -1840,16 +1840,25 @@ select:focus-visible {
   }
 
   .layout-rail .logo {
+    grid-column: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     color: var(--color-charcoal);
     width: auto;
+    margin-inline: auto;
+    margin-bottom: 24px;
   }
 
   .layout-rail .logo-image {
     width: clamp(145px, 46vw, 205px);
     max-height: 96px;
+    margin-inline: auto;
   }
 
   .layout-rail .nav-toggle {
+    grid-column: 3;
+    justify-self: end;
     display: block;
   }
 
