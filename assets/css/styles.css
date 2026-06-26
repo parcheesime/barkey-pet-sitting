@@ -1176,7 +1176,7 @@ select:focus-visible {
   min-width: 160px;
 }
 
-.venmo-placeholder {
+.venmo {
   justify-self: center;
   width: min(100%, 360px);
   display: grid;
@@ -1185,7 +1185,7 @@ select:focus-visible {
   text-align: center;
 }
 
-.venmo-placeholder img {
+.venmo img {
   width: 100%;
   height: auto;
   display: block;
@@ -1194,7 +1194,7 @@ select:focus-visible {
   background: var(--paper);
 }
 
-.venmo-placeholder figcaption {
+.venmo figcaption {
   color: var(--orange-text);
   font-family: var(--font-heading);
   font-size: 1rem;
@@ -1204,7 +1204,7 @@ select:focus-visible {
   text-transform: uppercase;
 }
 
-.venmo-placeholder__label,
+.venmo__label,
 .venmo-username {
   color: var(--teal-text);
   font-family: var(--font-heading);
@@ -1214,7 +1214,7 @@ select:focus-visible {
   line-height: 1.2;
 }
 
-.venmo-placeholder__label {
+.venmo__label {
   text-transform: uppercase;
 }
 
@@ -1255,7 +1255,7 @@ select:focus-visible {
     align-items: start;
   }
 
-  .venmo-placeholder {
+  .venmo {
     justify-self: start;
     max-width: 320px;
   }
@@ -1344,7 +1344,7 @@ select:focus-visible {
     width: 100%;
   }
 
-  .venmo-placeholder {
+  .venmo {
     width: min(100%, 280px);
   }
 }
