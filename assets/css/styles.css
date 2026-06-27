@@ -1,8 +1,5 @@
 /* === Barkey Pet Sitting - Design System Foundation === */
 
-/* Imports */
-@import url('https://fonts.googleapis.com/css2?family=Fontdiner+Swanky&family=Josefin+Sans:wght@400;500;600;700&family=Nunito:wght@400;600;700;800&family=Pacifico&display=swap');
-
 /* CSS Variables */
 :root {
   color-scheme: only light;
@@ -1054,7 +1051,7 @@ select:focus-visible {
   min-width: 240px;
   padding: 1rem 2.35rem;
   border: 1.5px solid var(--color-burnt-orange);
-  background: var(--color-burnt-orange);
+  background: var(--orange-text);
   color: var(--color-white);
   font-size: 1.12rem;
   letter-spacing: 0.07em;
@@ -1384,7 +1381,7 @@ select:focus-visible {
   }
 
   .logo-image {
-    width: clamp(145px, 46vw, 205px);
+    width: clamp(145px, 46vw, 183px);
     max-height: 96px;
   }
 
@@ -1881,7 +1878,7 @@ select:focus-visible {
   }
 
   .layout-rail .logo-image {
-    width: clamp(145px, 46vw, 205px);
+    width: clamp(145px, 46vw, 183px);
     max-height: 96px;
     margin-inline: auto;
   }
@@ -2475,7 +2472,7 @@ select:focus-visible {
 
 .contact-editorial .retro-contact-form input::placeholder,
 .contact-editorial .retro-contact-form textarea::placeholder {
-  color: color-mix(in srgb, var(--color-charcoal) 52%, var(--color-cream));
+  color: color-mix(in srgb, var(--color-charcoal) 66%, var(--color-cream));
 }
 
 .contact-editorial .retro-contact-form input:focus,
@@ -2497,7 +2494,7 @@ select:focus-visible {
   padding: 0.9rem 1.8rem;
   border: 1.5px solid var(--color-burnt-orange);
   border-radius: 9999px;
-  background: var(--color-burnt-orange);
+  background: var(--orange-text);
   color: var(--color-white);
   font-family: var(--font-heading);
   font-size: 1rem;
