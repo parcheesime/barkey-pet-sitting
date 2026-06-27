@@ -1741,10 +1741,25 @@ select:focus-visible {
 }
 
 .hero-photo-frame {
-  overflow: hidden;
+  --hero-photo-star-size: clamp(1.125rem, 1.7vw, 1.375rem);
+
+  position: relative;
+  overflow: visible;
   padding: 0;
   border-style: solid;
   border-color: var(--color-charcoal);
+}
+
+.hero-photo-frame::after {
+  content: "";
+  position: absolute;
+  top: clamp(1rem, 1.8vw, 1.5rem);
+  right: calc((var(--hero-photo-star-size) + 0.45rem) * -1);
+  z-index: 1;
+  width: var(--hero-photo-star-size);
+  aspect-ratio: 1;
+  pointer-events: none;
+  background: url("../images/shapes/twinkle-star-yellow.svg") center / contain no-repeat;
 }
 
 .hero-photo {
@@ -1752,6 +1767,7 @@ select:focus-visible {
   height: 100%;
   min-height: inherit;
   display: block;
+  border-radius: 6px;
   object-fit: cover;
 }
 
@@ -2227,20 +2243,36 @@ select:focus-visible {
 }
 
 .about-story-photo .placeholder-frame {
+  --photo-star-size: clamp(1.125rem, 1.7vw, 1.375rem);
+
+  position: relative;
   width: 100%;
   min-height: 0;
   max-height: 560px;
   aspect-ratio: 4 / 5;
-  overflow: hidden;
+  overflow: visible;
   border-style: solid;
-  border-color: color-mix(in srgb, var(--color-atomic-teal) 52%, var(--color-cream));
+  border-color: var(--color-charcoal);
   background: color-mix(in srgb, var(--color-soft-pink) 16%, var(--color-white));
+}
+
+.about-story-photo .placeholder-frame::after {
+  content: "";
+  position: absolute;
+  top: clamp(0.95rem, 1.8vw, 1.4rem);
+  right: calc((var(--photo-star-size) + 0.35rem) * -1);
+  z-index: 1;
+  width: var(--photo-star-size);
+  aspect-ratio: 1;
+  pointer-events: none;
+  background: url("../images/shapes/twinkle-star-yellow.svg") center / contain no-repeat;
 }
 
 .about-story-photo .hero-photo {
   width: 100%;
   height: 100%;
   min-height: 0;
+  border-radius: 6px;
   object-fit: cover;
   object-position: center top;
 }
