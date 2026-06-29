@@ -1852,10 +1852,20 @@ select:focus-visible {
 }
 
 @media (max-width: 1023px) {
+  :root {
+    --mobile-header-height: 9rem;
+  }
+
+  html {
+    scroll-padding-top: var(--mobile-header-height);
+  }
+
   .site-header.layout-rail {
-    position: sticky;
+    position: fixed;
+    inset: 0 0 auto;
+    z-index: 100;
     width: auto;
-    min-height: auto;
+    min-height: var(--mobile-header-height);
     padding: var(--space-sm) var(--page-gutter);
     display: grid;
     grid-template-columns: 1fr auto 1fr;
@@ -1897,6 +1907,9 @@ select:focus-visible {
     position: absolute;
     inset: 100% 0 auto;
     display: none;
+    max-height: calc(100vh - var(--mobile-header-height));
+    overflow-y: auto;
+    overscroll-behavior: contain;
     padding: var(--space-lg);
     background: var(--color-cream);
     border-top: 1px solid var(--border);
@@ -1937,6 +1950,7 @@ select:focus-visible {
 
   .layout-main {
     margin-left: 0;
+    margin-top: var(--mobile-header-height);
     padding: var(--space-sm) var(--page-gutter) var(--space-3xl);
   }
 
