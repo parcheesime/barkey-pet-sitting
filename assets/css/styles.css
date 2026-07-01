@@ -817,7 +817,7 @@ img {
   line-height: 1;
 }
 
-.agreement-cta p:last-child {
+.agreement-cta__copy p:not(.agreement-cta__eyebrow) {
   max-width: 36rem;
   color: var(--color-charcoal);
   font-size: 1rem;
@@ -831,9 +831,94 @@ img {
 }
 
 .agreement-cta .agreement-button--primary,
+.agreement-cta .agreement-button--strong,
 .agreement-cta .agreement-button--secondary {
   min-width: 0;
   max-width: 280px;
+  padding: 0.88rem 1.45rem;
+  font-size: 0.95rem;
+}
+
+.current-clients-hub {
+  width: min(100%, 1060px);
+  margin: 0 auto var(--space-2xl);
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: var(--space-lg);
+  align-items: stretch;
+}
+
+.current-client-card {
+  position: relative;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  gap: var(--space-lg);
+  padding: clamp(1.35rem, 3vw, 2rem);
+  border: 1.5px solid color-mix(in srgb, var(--color-atomic-teal) 42%, var(--color-cream));
+  border-radius: 8px 18px 8px 14px;
+  background:
+    radial-gradient(circle at top right, color-mix(in srgb, var(--color-mustard-gold) 14%, transparent) 0 3.2rem, transparent 3.3rem),
+    color-mix(in srgb, var(--color-white) 82%, var(--color-cream));
+  box-shadow: 0 8px 18px rgba(43, 43, 43, 0.07);
+}
+
+.current-client-card::before {
+  content: "";
+  position: absolute;
+  top: -0.6rem;
+  right: 1.25rem;
+  width: 1.5rem;
+  aspect-ratio: 1;
+  background: url("../images/shapes/twinkle-star-yellow.svg") center / contain no-repeat;
+  pointer-events: none;
+}
+
+.current-client-card--primary {
+  grid-column: 1 / -1;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto;
+  align-items: start;
+}
+
+.current-client-card__copy {
+  display: grid;
+  gap: 0.45rem;
+}
+
+.current-client-card h2 {
+  max-width: 16ch;
+  color: var(--teal-text);
+  font-size: clamp(1.9rem, 3vw, 2.65rem);
+  line-height: 1;
+}
+
+.current-client-card p:not(.agreement-cta__eyebrow) {
+  max-width: 38rem;
+  color: var(--color-charcoal);
+  font-size: 1rem;
+  line-height: 1.55;
+}
+
+.current-client-card__actions {
+  display: grid;
+  gap: var(--space-md);
+  justify-items: start;
+  align-self: end;
+}
+
+.current-client-card--primary .current-client-card__actions {
+  justify-items: start;
+}
+
+.current-client-card__actions--service {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  width: 100%;
+}
+
+.current-client-card .agreement-button {
+  width: 100%;
+  min-width: 0;
+  max-width: 100%;
   padding: 0.88rem 1.45rem;
   font-size: 0.95rem;
 }
@@ -1099,6 +1184,26 @@ img {
   transform: translateY(-2px);
 }
 
+.agreement-button--strong {
+  min-width: 240px;
+  padding: 1rem 2.35rem;
+  border: 1.5px solid var(--color-atomic-teal);
+  background: var(--teal-text);
+  color: var(--color-white);
+  font-size: 1.06rem;
+  letter-spacing: 0.06em;
+  box-shadow: 0 6px 14px rgba(46, 136, 143, 0.18);
+}
+
+.agreement-button--strong:hover,
+.agreement-button--strong:focus-visible {
+  border-color: color-mix(in srgb, var(--color-atomic-teal) 82%, var(--color-charcoal));
+  background: color-mix(in srgb, var(--color-atomic-teal) 82%, var(--color-charcoal));
+  color: var(--color-white);
+  box-shadow: 0 10px 20px rgba(43, 43, 43, 0.18);
+  transform: translateY(-2px);
+}
+
 .agreement-button--secondary {
   min-width: 190px;
   padding: 0.9rem 1.8rem;
@@ -1266,6 +1371,19 @@ img {
     justify-self: start;
   }
 
+  .current-client-card--primary {
+    grid-column: 1 / -1;
+    grid-template-columns: 1fr;
+  }
+
+  .current-client-card--primary .current-client-card__actions {
+    justify-items: start;
+  }
+
+  .current-client-card__actions--service {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
   .agreement-intro {
     grid-template-columns: 1fr;
     align-items: start;
@@ -1333,6 +1451,7 @@ img {
 
   .agreement-button,
   .agreement-button--primary,
+  .agreement-button--strong,
   .agreement-button--secondary {
     width: 100%;
     min-width: 0;
@@ -1370,6 +1489,31 @@ img {
   }
 
   .agreement-cta__actions .agreement-button {
+    width: 100%;
+  }
+
+  .current-client-card {
+    padding: var(--space-lg);
+  }
+
+  .current-clients-hub {
+    grid-template-columns: 1fr;
+  }
+
+  .current-client-card h2 {
+    font-size: 2rem;
+  }
+
+  .current-client-card__actions--service {
+    grid-template-columns: 1fr;
+  }
+
+  .current-client-card__actions {
+    justify-items: stretch;
+    width: 100%;
+  }
+
+  .current-client-card .agreement-button {
     width: 100%;
   }
 
@@ -2520,6 +2664,59 @@ img {
   text-transform: uppercase;
 }
 
+.contact-editorial .client-status-group {
+  padding: 0;
+  border: 0;
+  margin: 0;
+}
+
+.contact-editorial .client-status-group legend {
+  margin-bottom: var(--space-sm);
+  color: var(--color-charcoal);
+  font-family: var(--font-heading);
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.contact-editorial .client-status-options {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--space-md);
+}
+
+.contact-editorial .client-status-option {
+  display: flex;
+  gap: 0.65rem;
+  align-items: center;
+  min-height: 3.25rem;
+  padding: 0.85rem 1rem;
+  border: 1.5px solid color-mix(in srgb, var(--color-charcoal) 36%, var(--color-cream));
+  border-radius: 8px;
+  background: color-mix(in srgb, var(--color-white) 76%, var(--color-cream));
+  color: var(--color-charcoal);
+  font-family: var(--font-body);
+  font-size: var(--font-card-body);
+  font-weight: 700;
+  letter-spacing: 0;
+  line-height: 1.2;
+  text-transform: none;
+}
+
+.contact-editorial .client-status-option input {
+  flex: 0 0 auto;
+  width: 1.05rem;
+  height: 1.05rem;
+  accent-color: var(--color-burnt-orange);
+}
+
+.contact-editorial .client-status-option:has(input:focus-visible) {
+  border-color: var(--color-burnt-orange);
+  background: var(--color-white);
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--color-burnt-orange) 20%, transparent);
+}
+
 .contact-editorial .required {
   color: var(--orange-text);
 }
@@ -2603,6 +2800,10 @@ img {
 }
 
 @media (max-width: 767px) {
+  .contact-editorial .client-status-options {
+    grid-template-columns: 1fr;
+  }
+
   .contact-editorial .submit-btn,
   .contact-editorial .form-submit-button {
     width: 100%;

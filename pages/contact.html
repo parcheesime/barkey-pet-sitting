@@ -35,6 +35,7 @@
     <nav class="site-nav" aria-label="Main navigation">
       <a href="about.html">About</a>
       <a href="services.html">Services</a>
+      <a href="current-clients.html">Current Clients</a>
       <a href="faq.html">FAQ</a>
       <!-- <a href="payment.html">Payment</a> -->
       <a href="contact.html" class="active">Contact</a>
@@ -56,7 +57,8 @@
     <section class="page-hero" aria-labelledby="contact-title">
       <h1 id="contact-title" class="page-title">Contact Susan</h1>
       <p class="page-intro contact-page-intro">
-        Use this public inquiry form to start a conversation about care for your pet.
+        Use this public inquiry form to contact Susan about pet care, scheduling questions, or updates to an existing
+        booking.
       </p>
     </section>
 
@@ -79,6 +81,21 @@
             <label for="phone">Phone Number (Optional)</label>
             <input type="tel" id="phone" name="phone" placeholder="(619) 555-5555">
           </div>
+
+          <fieldset class="form-group client-status-group">
+            <legend>Client Status <span class="required">*</span></legend>
+            <div class="client-status-options">
+              <label class="client-status-option">
+                <input type="radio" name="client_status" value="New Client" required>
+                <span>New client</span>
+              </label>
+
+              <label class="client-status-option">
+                <input type="radio" name="client_status" value="Existing Client">
+                <span>Existing client</span>
+              </label>
+            </div>
+          </fieldset>
 
           <div class="form-row-grid">
             <div class="form-group">
@@ -106,7 +123,7 @@
           <div class="form-group">
             <label for="message">Your Message <span class="required">*</span></label>
             <textarea id="message" name="message" rows="5"
-              placeholder="Tell Susan about your pet, the dates needed, and the type of care you're looking for."
+              placeholder="Tell Susan how she can help, including your pet's needs, requested dates, schedule changes, or questions."
               required></textarea>
           </div>
 
@@ -118,14 +135,20 @@
     <section class="agreement-cta reveal" aria-labelledby="contact-onboarding-title">
       <div class="agreement-cta__copy">
         <p class="agreement-cta__eyebrow">CLIENT INTAKE</p>
-        <h2 id="contact-onboarding-title">Ready to take the next step?</h2>
+        <h2 id="contact-onboarding-title">Ready to get started?</h2>
         <p>
-          New to Barkey Pet Sitting? Complete the Pet Sitting Services Agreement to get started. Already have a
-          confirmed booking? You can pay Susan using Venmo.
+          New to Barkey Pet Sitting?
+        </p>
+        <p>
+          Schedule a complimentary Meet &amp; Greet to discuss your pet's needs and see if Barkey Pet Sitting is the
+          right fit. If you're ready to move forward, you can also complete the Pet Sitting Agreement or make a payment
+          below.
         </p>
       </div>
       <div class="agreement-cta__actions">
-        <a class="agreement-button agreement-button--primary" href="resources.html">Complete Pet Sitting Agreement</a>
+        <a class="agreement-button agreement-button--primary" href="https://cal.com/susan-barkey-pet-sitting/meet-greet"
+          target="_blank" rel="noopener noreferrer">Book a Meet &amp; Greet</a>
+        <a class="agreement-button agreement-button--strong" href="resources.html">Complete Pet Sitting Agreement</a>
         <a class="agreement-button agreement-button--secondary" href="payment.html">Pay Susan</a>
       </div>
     </section>
