@@ -1,6 +1,6 @@
 .contact-badge {
     display: block;
-    width: min(270px, 100%);
+    width: min(clamp(240px, 32vw, 270px), 100%);
     aspect-ratio: 2648 / 1579;
     margin-inline: auto;
     text-decoration: none;
@@ -24,4 +24,22 @@
     object-fit: contain;
     pointer-events: none;
     user-select: none;
+}
+
+@media (max-width: 1023px) {
+    .contact-badge {
+        width: min(clamp(230px, 30vw, 240px), 100%);
+    }
+}
+
+@media (max-width: 767px) {
+    .contact-badge {
+        width: min(clamp(190px, 54vw, 210px), 100%);
+    }
+}
+
+@media (max-width: 374px) {
+    .contact-badge {
+        width: min(clamp(165px, 48vw, 180px), 100%);
+    }
 }
