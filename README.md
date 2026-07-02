@@ -7,8 +7,11 @@ Built with semantic HTML, modern CSS, vanilla JavaScript, responsive design tech
 - Home
 - About
 - Services
+- Current Clients
 - FAQ
 - Contact
+- Forms & Resources
+- Payment
 
 ## Built With
 
@@ -19,4 +22,4 @@ Built with semantic HTML, modern CSS, vanilla JavaScript, responsive design tech
 
 ## Status
 
-In progress.
+Live site source for Barkey Pet Sitting.

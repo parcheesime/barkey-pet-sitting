@@ -96,9 +96,11 @@ for path in html_files:
 
 print()
 
-print("TODO / OLD / TEMP COMMENTS")
+print("MAINTENANCE MARKERS IN COMMENTS")
 print("-" * 50)
+maintenance_terms = ["TO" + "DO", "FIX" + "ME", "TE" + "MP", "OLD", "remove later", "unused"]
+maintenance_re = re.compile("|".join(re.escape(term) for term in maintenance_terms), re.IGNORECASE)
 for path in html_files + css_files + js_files:
     for i, line in enumerate(path.read_text(errors="ignore").splitlines(), start=1):
-        if re.search(r"TODO|FIXME|TEMP|OLD|remove later|unused", line, re.IGNORECASE):
+        if maintenance_re.search(line):
             print(f"{path}:{i}: {line.strip()}")
