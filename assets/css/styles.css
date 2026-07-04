@@ -560,6 +560,7 @@ img {
   .agreement-summary,
   .agreement-cta p,
   .rates-note,
+  .pricing-card p,
   .rate-callouts p,
   .about-story-section p,
   .services-menu-item p,
@@ -2604,6 +2605,79 @@ img {
   line-height: 1.65;
 }
 
+.pricing-section {
+  scroll-margin-top: var(--space-xl);
+}
+
+.pricing-section .section-heading {
+  margin-inline: auto;
+  text-align: center;
+}
+
+#pricing-title {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.45em;
+}
+
+#pricing-title::before,
+#pricing-title::after {
+  content: "";
+  flex: 0 0 auto;
+  width: 0.58em;
+  aspect-ratio: 1;
+  background: url("../images/shapes/ball-spike-star-gold.svg") center / contain no-repeat;
+}
+
+.pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--space-lg);
+}
+
+.pricing-card {
+  position: relative;
+  display: grid;
+  gap: var(--space-sm);
+  align-content: start;
+  min-height: 100%;
+  padding: clamp(1.2rem, 2vw, 1.65rem);
+  border: 1.5px solid color-mix(in srgb, var(--color-atomic-teal) 38%, var(--color-cream));
+  border-radius: 8px 18px 8px 14px;
+  background:
+    radial-gradient(circle at top right, color-mix(in srgb, var(--color-mustard-gold) 13%, transparent) 0 3.1rem, transparent 3.2rem),
+    color-mix(in srgb, var(--color-white) 84%, var(--color-cream));
+  box-shadow: 0 8px 18px rgba(43, 43, 43, 0.06);
+}
+
+.pricing-card:nth-child(4n + 2),
+.pricing-card:nth-child(4n + 3) {
+  border-color: color-mix(in srgb, var(--color-burnt-orange) 38%, var(--color-cream));
+}
+
+.pricing-card h3 {
+  max-width: 14ch;
+  color: var(--teal-text);
+  font-size: 1.75rem;
+  line-height: 1.08;
+}
+
+.pricing-card__price {
+  margin-bottom: 1.25rem;
+  color: var(--color-charcoal);
+  font-family: var(--font-heading);
+  font-size: 1.35rem;
+  font-weight: 800;
+  line-height: 1.18;
+}
+
+.pricing-card__detail {
+  color: var(--ink-light);
+  font-size: var(--font-card-body);
+  line-height: 1.45;
+}
+
 @media (max-width: 1023px) {
 
   .services-menu--top,
@@ -2629,6 +2703,19 @@ img {
   .services-menu-item h3 {
     max-width: none;
     font-size: 2rem;
+  }
+
+  .pricing-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .pricing-card h3 {
+    max-width: none;
+    font-size: 1.55rem;
+  }
+
+  .pricing-card__price {
+    font-size: 1.2rem;
   }
 }
 
