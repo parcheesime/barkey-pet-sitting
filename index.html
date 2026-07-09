@@ -18,6 +18,14 @@
     rel="stylesheet">
   <link rel="stylesheet" href="assets/css/styles.css?v=3">
   <link rel="stylesheet" href="assets/css/shape-components.css">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-JCY4SFZZVK"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-JCY4SFZZVK');
+  </script>
+  <script src="assets/js/analytics.js" defer></script>
   <script src="assets/js/script.js" defer></script>
 </head>
 
@@ -103,7 +111,7 @@
       </div>
 
       <div class="section-actions">
-        <a href="pages/services.html">View Services &rarr;</a>
+        <a href="pages/services.html" data-analytics-event="cta_click" data-analytics-location="home_services_preview">View Services &rarr;</a>
       </div>
     </section>
 
@@ -120,7 +128,7 @@
             thoughtful in-home care that helps pets feel safe, comfortable, and loved.
           </p>
           <div class="section-actions">
-            <a href="pages/about.html">Read About Susan</a>
+            <a href="pages/about.html" data-analytics-event="cta_click" data-analytics-location="home_about_preview">Read About Susan</a>
           </div>
         </div>
       </div>
@@ -131,7 +139,8 @@
         <h2 id="final-cta-title">Ready to talk through your pet care needs?</h2>
         <p>Use the public inquiry form to reach Susan and start the conversation.</p>
         <div class="section-actions">
-          <a class="contact-badge" href="pages/contact.html" aria-label="Contact Susan">
+          <a class="contact-badge" href="pages/contact.html" aria-label="Contact Susan" data-analytics-event="cta_click"
+            data-analytics-button-text="Contact Susan" data-analytics-location="home_final_cta">
             <img src="assets/images/branding/cta-contact.webp" data-default-src="assets/images/branding/cta-contact.webp"
               data-hover-src="assets/images/branding/cta-contact-hover.webp" width="2648" height="1579" class="contact-badge__image"
               alt="">

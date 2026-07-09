@@ -17,10 +17,18 @@
     rel="stylesheet">
   <link rel="stylesheet" href="../assets/css/styles.css?v=3">
   <link rel="stylesheet" href="../assets/css/shape-components.css">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-JCY4SFZZVK"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-JCY4SFZZVK');
+  </script>
+  <script src="../assets/js/analytics.js" defer></script>
   <script src="../assets/js/script.js" defer></script>
 </head>
 
-<body class="layout-shell">
+<body class="layout-shell" data-analytics-page="contact-success">
   <header class="site-header layout-rail">
     <a class="logo" href="../index.html" aria-label="Barkey Pet Sitting home">
       <img class="logo-image" src="../assets/images/branding/logo-dog.webp" width="1974" height="1037" alt="Barkey Pet Sitting">
@@ -71,8 +79,10 @@
           </p>
           <div class="thank-you-actions">
             <a class="agreement-button agreement-button--primary" href="https://cal.com/susan-barkey-pet-sitting/meet-greet" target="_blank"
-              rel="noopener noreferrer">Book a Meet &amp; Greet</a>
-            <a class="agreement-button agreement-button--secondary" href="../index.html">Return home</a>
+              rel="noopener noreferrer" data-analytics-event="meet_greet_click"
+              data-analytics-location="contact_thank_you_next_step">Book a Meet &amp; Greet</a>
+            <a class="agreement-button agreement-button--secondary" href="../index.html" data-analytics-event="cta_click"
+              data-analytics-location="contact_thank_you_next_step">Return home</a>
           </div>
         </div>
       </div>

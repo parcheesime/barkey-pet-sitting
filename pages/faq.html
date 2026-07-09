@@ -17,6 +17,14 @@
     rel="stylesheet">
   <link rel="stylesheet" href="../assets/css/styles.css?v=3">
   <link rel="stylesheet" href="../assets/css/shape-components.css">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-JCY4SFZZVK"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-JCY4SFZZVK');
+  </script>
+  <script src="../assets/js/analytics.js" defer></script>
   <script src="../assets/js/script.js" defer></script>
 </head>
 
@@ -61,36 +69,37 @@
     </section>
 
     <section class="faq-editorial reveal" aria-label="Frequently asked questions">
-      <details class="faq-editorial-item reveal">
+      <details class="faq-editorial-item reveal" data-analytics-event="faq_expand" data-analytics-question="How do I get started?">
         <summary>How do I get started?</summary>
         <p>Contact Susan using the inquiry form. She will reach out by phone or email to learn more about your pet and
           the services you're interested in.</p>
       </details>
-      <details class="faq-editorial-item reveal">
+      <details class="faq-editorial-item reveal" data-analytics-event="faq_expand" data-analytics-question="Is a meet-and-greet required?">
         <summary>Is a meet-and-greet required?</summary>
         <p>Yes. A meet-and-greet is required before care begins. Susan will meet your pet in their home, answer any
           questions you may have, and make sure everyone feels comfortable. This also helps her learn your pet's routine
           and any special care instructions.</p>
       </details>
-      <details class="faq-editorial-item reveal">
+      <details class="faq-editorial-item reveal" data-analytics-event="faq_expand" data-analytics-question="What pets do you care for?">
         <summary>What pets do you care for?</summary>
         <p>Susan loves and cares for all kinds of animals. Dogs and cats are the most common, but she is happy to discuss
           other pets as well. No aggressive or unpredictable pets, please.</p>
       </details>
-      <details class="faq-editorial-item reveal">
+      <details class="faq-editorial-item reveal" data-analytics-event="faq_expand" data-analytics-question="How are updates handled?">
         <summary>How are updates handled?</summary>
         <p>Updates typically include photos and a brief description of your pet's day. You can expect a morning and
           evening update, along with 3-4 photos when possible. Updates may also include medication confirmations or other
           important notes when applicable.</p>
       </details>
-      <details class="faq-editorial-item reveal">
+      <details class="faq-editorial-item reveal" data-analytics-event="faq_expand" data-analytics-question="What should I prepare before care begins?">
         <summary>What should I prepare before care begins?</summary>
         <p>Please complete all required forms before the first visit. Make sure Susan knows where all necessary supplies
           are located, including food, leashes, litter supplies, medications, treats, and any other items your pet may
           need. These details are usually reviewed during the meet-and-greet.</p>
       </details>
       <div class="faq-editorial-cta reveal">
-        <a class="contact-badge" href="contact.html" aria-label="Contact Susan">
+        <a class="contact-badge" href="contact.html" aria-label="Contact Susan" data-analytics-event="cta_click"
+          data-analytics-button-text="Contact Susan" data-analytics-location="faq_cta">
           <img src="../assets/images/branding/cta-contact.webp" data-default-src="../assets/images/branding/cta-contact.webp"
             data-hover-src="../assets/images/branding/cta-contact-hover.webp" width="2648" height="1579"
             class="contact-badge__image" alt="">

@@ -17,6 +17,14 @@
     rel="stylesheet">
   <link rel="stylesheet" href="../assets/css/styles.css?v=3">
   <link rel="stylesheet" href="../assets/css/shape-components.css">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-JCY4SFZZVK"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-JCY4SFZZVK');
+  </script>
+  <script src="../assets/js/analytics.js" defer></script>
   <script src="../assets/js/script.js" defer></script>
 </head>
 
@@ -67,7 +75,8 @@
             <img src="../assets/images/hero/susan-about.webp" width="554" height="521" alt="Susan Starkey" class="hero-photo">
           </div>
           <div class="about-cta">
-            <a class="contact-badge" href="contact.html" aria-label="Contact Susan">
+            <a class="contact-badge" href="contact.html" aria-label="Contact Susan" data-analytics-event="cta_click"
+              data-analytics-button-text="Contact Susan" data-analytics-location="about_photo_cta">
               <img src="../assets/images/branding/cta-contact.webp" data-default-src="../assets/images/branding/cta-contact.webp"
                 data-hover-src="../assets/images/branding/cta-contact-hover.webp" width="2648" height="1579"
                 class="contact-badge__image" alt="">

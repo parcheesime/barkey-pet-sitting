@@ -17,6 +17,14 @@
     rel="stylesheet">
   <link rel="stylesheet" href="../assets/css/styles.css?v=3">
   <link rel="stylesheet" href="../assets/css/shape-components.css">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-JCY4SFZZVK"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-JCY4SFZZVK');
+  </script>
+  <script src="../assets/js/analytics.js" defer></script>
   <script src="../assets/js/script.js" defer></script>
 </head>
 
@@ -72,11 +80,14 @@
         </div>
         <div class="current-client-card__actions current-client-card__actions--service">
           <a class="agreement-button agreement-button--primary" href="https://cal.com/susan-barkey-pet-sitting/standard-pet-visits"
-            target="_blank" rel="noopener noreferrer">Standard Pet Visit</a>
+            target="_blank" rel="noopener noreferrer" data-analytics-event="calendar_booking_click"
+            data-analytics-booking-type="standard_pet_visit" data-analytics-location="current_clients_schedule">Standard Pet Visit</a>
           <a class="agreement-button agreement-button--strong" href="https://cal.com/susan-barkey-pet-sitting/daytime-pet-sitting"
-            target="_blank" rel="noopener noreferrer">Daytime Pet Sitting</a>
+            target="_blank" rel="noopener noreferrer" data-analytics-event="calendar_booking_click"
+            data-analytics-booking-type="daytime_pet_sitting" data-analytics-location="current_clients_schedule">Daytime Pet Sitting</a>
           <a class="agreement-button agreement-button--strong" href="https://cal.com/susan-barkey-pet-sitting/overnight-pet-sitting"
-            target="_blank" rel="noopener noreferrer">Overnight Pet Sitting</a>
+            target="_blank" rel="noopener noreferrer" data-analytics-event="calendar_booking_click"
+            data-analytics-booking-type="overnight_pet_sitting" data-analytics-location="current_clients_schedule">Overnight Pet Sitting</a>
         </div>
       </article>
 
@@ -89,8 +100,10 @@
           </p>
         </div>
         <div class="current-client-card__actions">
-          <a class="agreement-button agreement-button--strong" href="resources.html">Complete Pet Sitting Agreement</a>
-          <a class="agreement-button agreement-button--secondary" href="payment.html">Pay Susan</a>
+          <a class="agreement-button agreement-button--strong" href="resources.html" data-analytics-event="cta_click"
+            data-analytics-location="current_clients_paperwork_payment">Complete Pet Sitting Agreement</a>
+          <a class="agreement-button agreement-button--secondary" href="payment.html" data-analytics-event="cta_click"
+            data-analytics-location="current_clients_paperwork_payment">Pay Susan</a>
         </div>
       </article>
 
@@ -105,7 +118,8 @@
         </div>
         <div class="current-client-card__actions">
           <a class="agreement-button agreement-button--primary" href="https://cal.com/susan-barkey-pet-sitting/meet-greet"
-            target="_blank" rel="noopener noreferrer">Book a Meet &amp; Greet</a>
+            target="_blank" rel="noopener noreferrer" data-analytics-event="meet_greet_click"
+            data-analytics-location="current_clients_new_clients">Book a Meet &amp; Greet</a>
         </div>
       </article>
 
@@ -118,7 +132,8 @@
           </p>
         </div>
         <div class="current-client-card__actions">
-          <a class="agreement-button agreement-button--secondary" href="contact.html">Contact Susan</a>
+          <a class="agreement-button agreement-button--secondary" href="contact.html" data-analytics-event="cta_click"
+            data-analytics-location="current_clients_contact">Contact Susan</a>
         </div>
       </article>
     </section>

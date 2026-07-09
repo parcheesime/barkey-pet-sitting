@@ -17,6 +17,14 @@
     rel="stylesheet">
   <link rel="stylesheet" href="../assets/css/styles.css?v=3">
   <link rel="stylesheet" href="../assets/css/shape-components.css">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-JCY4SFZZVK"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-JCY4SFZZVK');
+  </script>
+  <script src="../assets/js/analytics.js" defer></script>
   <script src="../assets/js/script.js" defer></script>
 </head>
 
@@ -74,9 +82,11 @@
           </p>
           <div class="thank-you-actions">
             <a class="agreement-button agreement-button--primary" href="https://venmo.com/u/Susan-Starkey-2" target="_blank"
-              rel="noopener noreferrer">Pay Susan on Venmo</a>
-            <a class="agreement-button agreement-button--secondary" href="contact.html">Back to Contact</a>
-            <a class="agreement-button agreement-button--secondary" href="faq.html">Visit the FAQ</a>
+              rel="noopener noreferrer" data-analytics-event="cta_click" data-analytics-location="agreement_thank_you_payment">Pay Susan on Venmo</a>
+            <a class="agreement-button agreement-button--secondary" href="contact.html" data-analytics-event="cta_click"
+              data-analytics-location="agreement_thank_you_payment">Back to Contact</a>
+            <a class="agreement-button agreement-button--secondary" href="faq.html" data-analytics-event="cta_click"
+              data-analytics-location="agreement_thank_you_payment">Visit the FAQ</a>
           </div>
         </div>
 

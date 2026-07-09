@@ -17,6 +17,14 @@
     rel="stylesheet">
   <link rel="stylesheet" href="../assets/css/styles.css?v=3">
   <link rel="stylesheet" href="../assets/css/shape-components.css">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-JCY4SFZZVK"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-JCY4SFZZVK');
+  </script>
+  <script src="../assets/js/analytics.js" defer></script>
   <script src="../assets/js/script.js" defer></script>
 </head>
 
@@ -155,7 +163,8 @@
         <h2 id="services-cta-title">Have a specific care need?</h2>
         <p>Use the inquiry form to tell Susan what your pet needs.</p>
         <div class="section-actions">
-          <a class="contact-badge" href="contact.html" aria-label="Contact Susan">
+          <a class="contact-badge" href="contact.html" aria-label="Contact Susan" data-analytics-event="cta_click"
+            data-analytics-button-text="Contact Susan" data-analytics-location="services_footer_cta">
             <img src="../assets/images/branding/cta-contact.webp" data-default-src="../assets/images/branding/cta-contact.webp"
               data-hover-src="../assets/images/branding/cta-contact-hover.webp" width="2648" height="1579"
               class="contact-badge__image" alt="">

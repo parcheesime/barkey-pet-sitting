@@ -17,6 +17,14 @@
     rel="stylesheet">
   <link rel="stylesheet" href="../assets/css/styles.css?v=3">
   <link rel="stylesheet" href="../assets/css/shape-components.css">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-JCY4SFZZVK"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-JCY4SFZZVK');
+  </script>
+  <script src="../assets/js/analytics.js" defer></script>
   <script src="../assets/js/script.js" defer></script>
 </head>
 
@@ -63,7 +71,8 @@
 
     <section class="contact-editorial reveal" aria-label="Public inquiry form">
       <div class="contact-form-card">
-        <form class="retro-contact-form" action="https://formspree.io/f/xgobyjdw" method="POST">
+        <form class="retro-contact-form" action="https://formspree.io/f/xgobyjdw" method="POST"
+          data-analytics-event="contact_form_submit" data-analytics-location="contact_page">
           <input type="hidden" name="_redirect" value="https://barkeypetsitting.com/pages/contact-thank-you.html">
 
           <div class="form-group">
@@ -146,9 +155,12 @@
       </div>
       <div class="agreement-cta__actions">
         <a class="agreement-button agreement-button--primary" href="https://cal.com/susan-barkey-pet-sitting/meet-greet"
-          target="_blank" rel="noopener noreferrer">Book a Meet &amp; Greet</a>
-        <a class="agreement-button agreement-button--strong" href="resources.html">Complete Pet Sitting Agreement</a>
-        <a class="agreement-button agreement-button--secondary" href="payment.html">Pay Susan</a>
+          target="_blank" rel="noopener noreferrer" data-analytics-event="meet_greet_click"
+          data-analytics-location="contact_onboarding">Book a Meet &amp; Greet</a>
+        <a class="agreement-button agreement-button--strong" href="resources.html" data-analytics-event="cta_click"
+          data-analytics-location="contact_onboarding">Complete Pet Sitting Agreement</a>
+        <a class="agreement-button agreement-button--secondary" href="payment.html" data-analytics-event="cta_click"
+          data-analytics-location="contact_onboarding">Pay Susan</a>
       </div>
     </section>
 
