@@ -290,11 +290,7 @@ img {
 
 @media (max-width: 768px) {
   .reveal,
-  .fade-in,
-  .scroll-fade,
-  .reveal-enabled .reveal,
-  .reveal-enabled .fade-in,
-  .reveal-enabled .scroll-fade {
+  .reveal-enabled .reveal {
     opacity: 1;
     transform: none;
     visibility: visible;
@@ -413,23 +409,6 @@ img {
 
 .text-olive {
   color: var(--teal-text);
-}
-
-/* Custom Text Accents */
-.cursive-accent {
-  font-family: var(--font-accent);
-  font-size: 1.15em;
-  color: var(--orange-text);
-  display: inline-block;
-  transform: rotate(-1deg);
-  font-weight: 700;
-}
-
-.paw-accent {
-  color: var(--gold-text);
-  display: inline-block;
-  font-size: 0.95em;
-  transform: translateY(-0.05em) rotate(8deg);
 }
 
 /* Primary CTA Buttons */
@@ -556,7 +535,6 @@ img {
   .home-step p,
   .framework-footer__panel p,
   .contact-form-card p,
-  .form-note,
   .agreement-summary,
   .agreement-cta p,
   .rates-note,
@@ -704,20 +682,6 @@ img {
   pointer-events: none;
   font-size: var(--font-card-body);
   color: var(--ink-light);
-}
-
-.submit-btn {
-  width: 100%;
-  border: 0;
-  margin-top: 0.75rem;
-}
-
-.form-note {
-  text-align: center;
-  font-size: var(--font-footer);
-  line-height: 1.5;
-  color: var(--ink-light);
-  font-weight: 600;
 }
 
 /* === Resources Agreement Page === */
@@ -1884,17 +1848,11 @@ img {
   text-align: center;
 }
 
-.framework-hero__actions,
 .section-actions {
   display: flex;
   flex-wrap: wrap;
   gap: var(--space-md);
   margin-top: var(--space-xl);
-}
-
-.framework-hero__actions {
-  width: 100%;
-  justify-content: center;
 }
 
 .photo-frame {
@@ -2672,12 +2630,6 @@ img {
   line-height: 1.18;
 }
 
-.pricing-card__detail {
-  color: var(--ink-light);
-  font-size: var(--font-card-body);
-  line-height: 1.45;
-}
-
 @media (max-width: 1023px) {
 
   .services-menu--top,
@@ -2875,23 +2827,11 @@ img {
   transform: translateY(0);
 }
 
-.contact-editorial .submit-btn {
-  width: auto;
-  min-width: 220px;
-  margin-top: var(--space-sm);
-}
-
-.contact-editorial .form-note {
-  max-width: 36rem;
-  text-align: left;
-}
-
 @media (max-width: 767px) {
   .contact-editorial .client-status-options {
     grid-template-columns: 1fr;
   }
 
-  .contact-editorial .submit-btn,
   .contact-editorial .form-submit-button {
     width: 100%;
   }
