@@ -7,10 +7,9 @@ Built with semantic HTML, modern CSS, vanilla JavaScript, responsive design tech
 - Home
 - About
 - Services
-- Current Clients
 - FAQ
+- Resources
 - Contact
-- Forms & Resources
 - Payment
 
 ## Built With

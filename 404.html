@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex">
+  <meta http-equiv="refresh" content="5; url=/">
+  <title>Page Not Found - Barkey Pet Sitting</title>
+  <script>
+    (function () {
+      var redirects = {
+        "/pages/about.html": "/about/",
+        "/pages/services.html": "/services/",
+        "/pages/faq.html": "/faq/",
+        "/pages/resources.html": "/resources/",
+        "/pages/current-clients.html": "/resources/",
+        "/pages/contact.html": "/contact/",
+        "/pages/payment.html": "/payment/",
+        "/pages/thank-you.html": "/thank-you/",
+        "/pages/contact-thank-you.html": "/contact-thank-you/",
+        "/secret-lounge.html": "/secret-lounge/"
+      };
+      var destination = redirects[window.location.pathname];
+      if (destination) {
+        window.location.replace(destination + window.location.search + window.location.hash);
+      }
+    }());
+  </script>
+</head>
+<body>
+  <main>
+    <h1>Page not found</h1>
+    <p>The page may have moved. <a href="/">Return to Barkey Pet Sitting</a>.</p>
+  </main>
+</body>
+</html>

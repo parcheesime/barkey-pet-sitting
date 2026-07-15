@@ -2,7 +2,7 @@ from pathlib import Path
 import re
 
 css_file = Path("assets/css/styles.css")
-html_files = list(Path(".").glob("*.html"))
+html_files = [path for path in Path(".").rglob("*.html") if "node_modules" not in path.parts]
 
 css = css_file.read_text()
 html = "\n".join(file.read_text() for file in html_files)

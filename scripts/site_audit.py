@@ -2,7 +2,7 @@ from pathlib import Path
 import re
 from collections import Counter, defaultdict
 
-html_files = sorted(Path(".").glob("*.html"))
+html_files = sorted(path for path in Path(".").rglob("*.html") if "node_modules" not in path.parts)
 css_files = sorted(Path("assets/css").glob("*.css"))
 js_files = sorted(Path("assets/js").glob("*.js"))
 
