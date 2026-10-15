@@ -2968,3 +2968,28 @@ img {
     font-size: 1.55rem;
   }
 }
+
+/* Footer links accompany the hamburger navigation below the desktop breakpoint. */
+.footer-nav {
+  display: none;
+}
+
+@media (max-width: 1023px) {
+  .footer-nav {
+    display: block;
+    width: 100%;
+    text-align: left;
+    font-size: 0.875rem;
+    margin-bottom: calc(16px - var(--space-sm));
+  }
+
+  .copyright-bar .footer-nav a {
+    display: block;
+    width: fit-content;
+    font-weight: 400;
+  }
+
+  .footer-nav a + a {
+    margin-top: 12px;
+  }
+}
