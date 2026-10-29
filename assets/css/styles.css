@@ -2696,6 +2696,18 @@ img {
   line-height: 1.18;
 }
 
+.pricing-card > .pricing-card__price:not(:last-child) {
+  margin-bottom: 0;
+}
+
+.pricing-card > ul.pricing-card__price {
+  padding-inline-start: 2.5rem;
+}
+
+.pricing-card > ul.pricing-card__price > li {
+  padding-inline-start: 0.25rem;
+}
+
 @media (max-width: 1023px) {
 
   .services-menu--top,
